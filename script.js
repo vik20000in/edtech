@@ -1,6 +1,9 @@
 let data;
 let currentLevel = 'subjects';
 let currentSubject, currentChapter;
+const subjectList = document.getElementById('subject-list');
+const chapterList = document.getElementById('chapter-list');
+const backBtn = document.getElementById('back-btn');
 
 fetch('data.json')
     .then(response => response.json())
@@ -10,41 +13,35 @@ fetch('data.json')
     })
     .catch(error => console.error('Error fetching data:', error));
 
-function displaySubjects() {
-    currentLevel = 'subjects';
-    const subjectList = document.getElementById('subject-list');
-    const backBtn = document.getElementById('back-btn');
-    subjectList.innerHTML = '';
-    backBtn.classList.add('hidden');
-    data.subjects.forEach((subject, index) => {
-        const button = document.createElement('button');
-        button.textContent = subject.name;
-        button.addEventListener('click', () => displayChapters(index));
-        subjectList.appendChild(button);
-    });
-}
+    function displaySubjects() {
+        subjectList.innerHTML = '';
+        backBtn.classList.add('hidden');
+        data.subjects.forEach((subject, index) => {
+            const button = document.createElement('button');
+            button.textContent = subject.name;
+            button.addEventListener('click', () => displayChapters(index));
+            subjectList.appendChild(button);
+        });
+    }
 
-function displayChapters(subjectIndex) {
-    currentLevel = 'chapters';
-    currentSubject = subjectIndex;
-    const chapterList = document.getElementById('chapter-list');
-    const backBtn = document.getElementById('back-btn');
-    chapterList.innerHTML = '';
-    subjectList.classList.add('hidden');
-    chapterList.classList.remove('hidden');
-    backBtn.classList.remove('hidden');
-    backBtn.querySelector('button').onclick = () => {
-        chapterList.classList.add('hidden');
-        subjectList.classList.remove('hidden');
-        displaySubjects();
-    };
-    data.subjects[subjectIndex].chapters.forEach((chapter, index) => {
-        const button = document.createElement('button');
-        button.textContent = chapter.title;
-        button.addEventListener('click', () => showOptions(subjectIndex, index));
-        chapterList.appendChild(button);
-    });
-}
+    function displayChapters(subjectIndex) {
+        chapterList.innerHTML = '';
+        subjectList.classList.add('hidden'); // Now works because subjectList is global
+        chapterList.classList.remove('hidden');
+        backBtn.classList.remove('hidden');
+        backBtn.querySelector('button').onclick = () => {
+            chapterList.classList.add('hidden');
+            subjectList.classList.remove('hidden');
+            displaySubjects();
+        };
+        data.subjects[subjectIndex].chapters.forEach((chapter, index) => {
+            const button = document.createElement('button');
+            button.textContent = chapter.title;
+            // Add click handler for chapter options
+            chapterList.appendChild(button);
+        });
+    }
+
 
 function showOptions(subjectIndex, chapterIndex) {
     currentLevel = 'options';
