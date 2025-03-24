@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education App for Class 6</title>
+    <title>Class 6 Study Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main"></div>
-    <script src="app.js"></script>
+    <div class="container">
+        <header>
+            <h1>Class 6 Study Hub</h1>
+        </header>
+        <div id="back-btn" class="hidden">
+            <button>Back</button>
+        </div>
+        <div id="subject-list" class="list"></div>
+        <div id="chapter-list" class="list hidden"></div>
+        <div id="content" class="content hidden">
+            <div id="options" class="options"></div>
+            <div id="pdf-viewer" class="hidden">
+                <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+            </div>
+            <div id="video-player" class="hidden">
+                <video id="video" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="quiz" class="hidden"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
