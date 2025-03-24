@@ -1,0 +1,55 @@
+{
+    "subjects": [
+      {
+        "name": "Mathematics",
+        "chapters": [
+          {
+            "name": "Chapter 1: Numbers",
+            "pdf_url": "assets/math_ch1.pdf",
+            "video_url": "assets/math_ch1.mp4",
+            "quiz": [
+              {
+                "question": "What is 2 + 2?",
+                "options": ["3", "4", "5", "6"],
+                "correct_answer": 1
+              },
+              {
+                "question": "What is the next number after 5?",
+                "options": ["6", "7", "8", "9"],
+                "correct_answer": 0
+              }
+            ]
+          },
+          {
+            "name": "Chapter 2: Algebra",
+            "pdf_url": "assets/math_ch2.pdf",
+            "video_url": "assets/math_ch2.mp4",
+            "quiz": [
+              {
+                "question": "What is x if x + 3 = 5?",
+                "options": ["1", "2", "3", "4"],
+                "correct_answer": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "chapters": [
+          {
+            "name": "Chapter 1: Plants",
+            "pdf_url": "assets/science_ch1.pdf",
+            "video_url": "assets/science_ch1.mp4",
+            "quiz": [
+              {
+                "question": "What do plants need to grow?",
+                "options": ["Water", "Sunlight", "Soil", "All of the above"],
+                "correct_answer": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

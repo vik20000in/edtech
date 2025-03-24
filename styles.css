@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px; /* Large text for TV visibility */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.list-item {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+.list-item.focused {
+    border-color: #00f;
+    background-color: #eef;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+iframe, video {
+    display: block;
+    margin: 20px auto;
+}
