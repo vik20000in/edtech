@@ -1,105 +1,110 @@
 body {
-    font-family: 'Georgia', serif; /* Book-like font */
+    font-family: 'Baloo 2', cursive;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2); /* Soft gradient */
-}
-
-.container {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff url('https://via.placeholder.com/800x600.png?text=Books') center/cover no-repeat; /* Subtle book background */
-    background-blend-mode: overlay;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    overflow: hidden;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    background: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50, #81C784);
     color: white;
-    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+header h1 {
     margin: 0;
-    font-size: 2.5em; /* Large for TV readability */
+    font-size: 28px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.list {
+#back-button {
+    background: linear-gradient(to right, #f44336, #e57373);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#back-button:hover {
+    background: #d32f2f;
+    transform: scale(1.1);
+}
+
+main {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    width: 100%;
 }
 
-.list button {
+.menu-item {
     width: 80%;
-    padding: 15px;
-    margin: 10px 0;
-    font-size: 1.5em;
-    background-color: #27ae60; /* Green for subjects/chapters */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Fallback for testing */
-}
-
-.options button {
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1.5em;
-    background-color: #2980b9; /* Blue for options */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#back-btn button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #e74c3c; /* Red for back */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 10px auto;
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.content {
-    text-align: center;
+    max-width: 400px;
     padding: 20px;
-}
-
-#pdf-frame {
-    width: 100%;
-    height: 70vh;
-    border: none;
-}
-
-#video {
-    width: 100%;
-    max-height: 70vh;
-}
-
-#quiz {
-    font-size: 1.3em;
-}
-
-#quiz label {
-    display: block;
     margin: 10px 0;
+    font-size: 24px;
+    background: linear-gradient(to right, #2196F3, #64B5F6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:focus {
-    outline: 3px solid #f1c40f; /* Yellow focus for TV navigation */
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+.menu-item:focus {
+    outline: none;
+    box-shadow: 0 0 15px #FFEB3B;
+    transform: scale(1.1);
+}
+
+.video-container, .pdf-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe, video, embed {
+    width: 90%;
+    height: 90%;
+    border: 2px solid #64B5F6;
+    border-radius: 5px;
+}
+

@@ -1,31 +1,41 @@
 {
-  "subjects": [
+    "subjects": [
       {
-          "name": "Mathematics",
-          "chapters": [
+        "name": "Mathematics",
+        "chapters": [
+          {
+            "name": "Chapter 1: Numbers",
+            "lessons": [
               {
-                  "title": "Chapter 1: Numbers",
-                  "pdf": "https://example.com/math_ch1.pdf",
-                  "video": "https://example.com/math_ch1.mp4",
-                  "quiz": [
-                      {"question": "What is 2 + 2?", "options": ["3", "4", "5"], "answer": "4"},
-                      {"question": "What is 5 - 3?", "options": ["1", "2", "3"], "answer": "2"}
-                  ]
+                "title": "Introduction to Numbers",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+              },
+              {
+                "title": "Number Systems",
+                "type": "local",
+                "path": "data/Mathematics/Chapter1/video1.mp4"
               }
-          ]
+            ],
+            "qa_pdf": "data/Mathematics/Chapter1/qa.pdf"
+          }
+        ]
       },
       {
-          "name": "Science",
-          "chapters": [
+        "name": "Biology",
+        "chapters": [
+          {
+            "name": "Chapter 1: Leaf",
+            "lessons": [
               {
-                  "title": "Chapter 1: Plants",
-                  "pdf": "https://example.com/science_ch1.pdf",
-                  "video": "https://example.com/science_ch1.mp4",
-                  "quiz": [
-                      {"question": "What do plants need?", "options": ["Water", "Sunlight", "Both"], "answer": "Both"}
-                  ]
+                "title": "Leaf",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
               }
-          ]
+            ],
+            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+          }
+        ]
       }
-  ]
-}
+    ]
+  }
