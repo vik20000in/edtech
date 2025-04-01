@@ -115,6 +115,22 @@
             "qa_pdf": "data/Computers/Chapter1/qa.pdf"
           }
         ]
+      },
+      {
+        "name": "Hindi",
+        "chapters": [
+          {
+            "name": "Chapter 1: Introduction",
+            "lessons": [
+              {
+                "title": "Basic Hindi",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ctq6UQ5RRjk"
+              }
+            ],
+            "qa_pdf": "data/Hindi/Chapter1/qa.pdf"
+          }
+        ]
       }
     ]
   }
