@@ -64,9 +64,8 @@ header {
 main {
     margin-top: 60px;
     height: calc(100vh - 60px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .subject-heading {
@@ -78,19 +77,20 @@ main {
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Add space between grid items */
     width: 100%;
-    margin-top: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
 .menu-item {
-    width: 80%;
-    max-width: 400px;
-    padding: 20px;
-    margin: 10px 0;
-    font-size: 24px;
+    width: 100%;
+    max-width: 300px; /* Adjusted from 400px for better grid fit */
+    padding: 15px;
+    margin: 0; /* Remove margin since we're using grid gap */
+    font-size: 20px;
     background: linear-gradient(to right, #2196F3, #64B5F6);
     color: white;
     border: none;
@@ -130,5 +130,18 @@ iframe, video, embed {
     height: 90%;
     border: 2px solid #64B5F6;
     border-radius: 5px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 1200px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
 }
 

@@ -56,22 +56,6 @@
         "name": "Physics",
         "chapters": [
           {
-            "name": "Chapter 1: Motion",
-            "lessons": [
-              {
-                "title": "Motion",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
-              }
-            ],
-            "qa_pdf": "data/Science/Chapter1/qa.pdf"
-          }
-        ]
-      },
-      {
-        "name": "Chemistry",
-        "chapters": [
-          {
             "name": "Chapter 1: Matter",
             "lessons": [
               {
@@ -85,13 +69,29 @@
         ]
       },
       {
+        "name": "Chemistry",
+        "chapters": [
+          {
+            "name": "Chapter 1: Introduction to chemistry",
+            "lessons": [
+              {
+                "title": "Introduction to chemistry",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/w_jhb7XOZkk"
+              }
+            ],
+            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+          }
+        ]
+      },
+      {
         "name": "Geography",
         "chapters": [
           {
             "name": "Chapter Maps",
             "lessons": [
               {
-                "title": "Introduction to Earth",
+                "title": "Introduction to Maps",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/ZaM6IB-a7co"
               }
