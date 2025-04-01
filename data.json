@@ -36,6 +36,85 @@
             "qa_pdf": "data/Science/Chapter1/qa.pdf"
           }
         ]
+      },
+      {
+        "name": "History",
+        "chapters": [
+          {
+            "name": "Egyptian History",
+            "lessons": [
+              {
+                "title": "Egyptian History video",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
+              }
+            ]           
+          }
+        ]
+      },
+      {
+        "name": "Physics",
+        "chapters": [
+          {
+            "name": "Chapter 1: Motion",
+            "lessons": [
+              {
+                "title": "Motion",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
+              }
+            ],
+            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Chemistry",
+        "chapters": [
+          {
+            "name": "Chapter 1: Matter",
+            "lessons": [
+              {
+                "title": "Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
+              }
+            ],
+            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Geography",
+        "chapters": [
+          {
+            "name": "Chapter Maps",
+            "lessons": [
+              {
+                "title": "Introduction to Earth",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ZaM6IB-a7co"
+              }
+            ],
+            "qa_pdf": "data/Geography/Chapter1/qa.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Computers",
+        "chapters": [
+          {
+            "name": "Introduction to Languages",
+            "lessons": [
+              {
+                "title": "Programming Languages Basics",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/Gs13fR_bz3A"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter1/qa.pdf"
+          }
+        ]
       }
     ]
   }
