@@ -118,7 +118,7 @@ function renderVideo(subjectName, chapterName, lessonTitle) {
     const lesson = chapter.lessons.find(l => l.title === lessonTitle);
 
     if (lesson.type === 'youtube') {
-        content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><iframe src="${lesson.url}" frameborder="0" allowfullscreen></iframe></div>`;
+        content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><iframe src="${formatYouTubeUrl(lesson.url)}" frameborder="0" allowfullscreen></iframe></div>`;
     } else if (lesson.type === 'local') {
         content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><video controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
     }
@@ -129,6 +129,32 @@ function renderPDF(subjectName, chapterName) {
     const subject = data.subjects.find(s => s.name === subjectName);
     const chapter = subject.chapters.find(c => c.name === chapterName);
     content.innerHTML = `<h2>Q&A for ${chapterName}</h2><div class="pdf-container"><embed src="${chapter.qa_pdf}" type="application/pdf"></div>`;
+}
+
+function formatYouTubeUrl(url) {
+    // Handle youtu.be format
+    if (url.includes('youtu.be')) {
+        const videoId = url.split('youtu.be/')[1].split('?')[0];
+        return `https://www.youtube.com/embed/${videoId}`;
+    }
+    // Handle youtube.com format
+    else if (url.includes('youtube.com')) {
+        if (url.includes('embed')) {
+            return url; // Already in embed format
+        }
+        const videoId = url.split('v=')[1].split('&')[0];
+        return `https://www.youtube.com/embed/${videoId}`;
+    }
+    return url;
+}
+
+// Use this function when loading video URLs
+function loadVideo(lesson) {
+    const formattedUrl = formatYouTubeUrl(lesson.url);
+    // Your existing code to display the video
+    const iframe = document.createElement('iframe');
+    iframe.src = formattedUrl;
+    // ...rest of your video loading code
 }
 
 document.getElementById('back-button').addEventListener('click', () => {
