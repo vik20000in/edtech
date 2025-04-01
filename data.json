@@ -61,7 +61,7 @@
               {
                 "title": "Matter",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
+                "url": "https://www.youtube.com/embed/WFOApNmVwm0?t=51"
               }
             ],
             "qa_pdf": "data/Science/Chapter1/qa.pdf"
@@ -109,7 +109,7 @@
               {
                 "title": "Programming Languages Basics",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/Gs13fR_bz3A"
+                "url": "https://www.youtube.com/embed/oNv7sqR5ozg"
               }
             ],
             "qa_pdf": "data/Computers/Chapter1/qa.pdf"
@@ -123,9 +123,9 @@
             "name": "Chapter 1: Introduction",
             "lessons": [
               {
-                "title": "Basic Hindi",
+                "title": "Dhan Ki khoz",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/ctq6UQ5RRjk"
+                "url": "https://www.youtube.com/embed/An7CEzAG8fM"
               }
             ],
             "qa_pdf": "data/Hindi/Chapter1/qa.pdf"
