@@ -9,12 +9,12 @@
               {
                 "title": "Introduction to Numbers",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                "url": "https://www.youtube.com/embed/AF31lWJJSgg"
               },
               {
                 "title": "Number Systems",
-                "type": "local",
-                "path": "data/Mathematics/Chapter1/video1.mp4"
+                "type": "youtube",
+                "path": "https://www.youtube.com/embed/umrmZRSx2cc"
               }
             ],
             "qa_pdf": "data/Mathematics/Chapter1/qa.pdf"
