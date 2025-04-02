@@ -33,7 +33,7 @@
                 "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
               }
             ],
-            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+            "qa_pdf": "data/Biology/Chapter1/qa.pdf"
           }
         ]
       },
@@ -48,7 +48,8 @@
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
               }
-            ]           
+            ]   ,
+            "qa_pdf": "data/history/Egypt_History.pdf"        
           }
         ]
       },
@@ -80,7 +81,7 @@
                 "url": "https://www.youtube.com/embed/w_jhb7XOZkk?t=103"
               }
             ],
-            "qa_pdf": "data/Science/Chapter1/qa.pdf"
+            "qa_pdf": "data/Chemistry/Chapter1/qa.pdf"
           }
         ]
       },
