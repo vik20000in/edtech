@@ -10,14 +10,12 @@
                 "title": "Introduction to Numbers",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/AF31lWJJSgg"
-              },
-              {
-                "title": "Number Systems",
-                "type": "youtube",
-                "path": "https://www.youtube.com/embed/umrmZRSx2cc"
               }
             ],
-            "qa_pdf": "data/Mathematics/Chapter1/qa.pdf"
+            "qa": {
+                "type": "html",
+                "path": "data/Mathematics/Chapter1/qa.html"
+            }
           }
         ]
       },
@@ -33,7 +31,10 @@
                 "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
               }
             ],
-            "qa_pdf": "data/Biology/Chapter1/qa.pdf"
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter1/qa.html"
+            }
           }
         ]
       },

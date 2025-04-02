@@ -31,8 +31,10 @@ function render() {
             renderVideo(currentState.subject, currentState.chapter, currentState.lesson);
         } else if (currentState.type === 'pdf') {
             renderPDF(currentState.subject, currentState.chapter);
-        }
+        }else if (currentState.type === 'html') {
+            loadQA(currentState.subject, currentState.chapter);
     }
+}
 }
 
 function renderMainMenu() {
@@ -107,7 +109,17 @@ function selectLesson(subjectName, chapterName, lessonTitle) {
 }
 
 function selectQA(subjectName, chapterName) {
-    history.push({ type: 'pdf', subject: subjectName, chapter: chapterName });
+    const subject = data.subjects.find(s => s.name === subjectName);
+    const chapter = subject.chapters.find(c => c.name === chapterName);
+
+    // Check if chapter has HTML Q&A
+    if (chapter.qa && chapter.qa.type === 'html') {
+        history.push({ type: 'html', subject: subjectName, chapter: chapterName });
+    } 
+    // Fallback to PDF
+    else if (chapter.qa_pdf) {
+        history.push({ type: 'pdf', subject: subjectName, chapter: chapterName });
+    }
     render();
 }
 
@@ -129,6 +141,40 @@ function renderPDF(subjectName, chapterName) {
     const subject = data.subjects.find(s => s.name === subjectName);
     const chapter = subject.chapters.find(c => c.name === chapterName);
     content.innerHTML = `<h2>Q&A for ${chapterName}</h2><div class="pdf-container"><embed src="${chapter.qa_pdf}" type="application/pdf"></div>`;
+}
+
+async function loadQA(subjectName, chapterName) {
+    try {
+        const content = document.getElementById('content');
+        const subject = data.subjects.find(s => s.name === subjectName);
+        const chapter = subject.chapters.find(c => c.name === chapterName);
+
+        // Create HTML structure with better styling
+        content.innerHTML = `
+            <div class="qa-wrapper">
+                <div class="qa-header">
+                    <h2>${chapterName}</h2>
+                    <p class="qa-subtitle">Questions and Answers</p>
+                </div>
+                <div id="qa-section" class="qa-content"></div>
+            </div>
+        `;
+
+        const response = await fetch(chapter.qa.path);
+        if (!response.ok) throw new Error('Failed to load Q&A');
+        const html = await response.text();
+        
+        const qaContainer = document.querySelector('#qa-section');
+        qaContainer.innerHTML = html;
+    } catch (error) {
+        console.error('Error loading Q&A:', error);
+        content.innerHTML = `
+            <div class="qa-error">
+                <h2>Error Loading Q&A</h2>
+                <p>Failed to load Q&A content for ${chapterName}</p>
+            </div>
+        `;
+    }
 }
 
 function formatYouTubeUrl(url) {

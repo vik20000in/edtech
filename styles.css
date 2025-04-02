@@ -132,6 +132,75 @@ iframe, video, embed {
     border-radius: 5px;
 }
 
+.qa-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qa-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.qa-header h2 {
+    color: #1976D2;
+    margin: 0;
+    font-size: 32px;
+}
+
+.qa-subtitle {
+    color: #666;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.qa-content {
+    padding: 20px;
+}
+
+.qa-item {
+    background: #f8f9fa;
+    border-left: 4px solid #2196F3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.2s ease;
+}
+
+.qa-item:hover {
+    transform: translateX(5px);
+}
+
+.qa-item h3 {
+    color: #1976D2;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.qa-item p {
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.qa-error {
+    text-align: center;
+    padding: 40px;
+    background: #ffebee;
+    border-radius: 8px;
+    color: #c62828;
+}
+
+.qa-error h2 {
+    margin: 0 0 10px 0;
+}
+
 /* Make the layout responsive */
 @media (max-width: 1200px) {
     .menu {
