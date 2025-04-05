@@ -16,6 +16,20 @@
                 "type": "html",
                 "path": "data/Mathematics/Chapter1/qa.html"
             }
+          },
+          {
+            "name": "Fundamentals for Algebra",
+            "lessons": [
+              {
+                "title": "Fundamentals for Algebra",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/nHVfIxiGYfc"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Mathematics/FundamentalsForAlgebra/qa.html"
+            }
           }
         ]
       },
@@ -37,7 +51,7 @@
             }
           }
         ]
-      },
+      }, 
       {
         "name": "History",
         "chapters": [
@@ -50,7 +64,10 @@
                 "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
               }
             ]   ,
-            "qa_pdf": "data/history/Egypt_History.pdf"        
+            "qa": {
+              "type": "html",
+              "path": "data/history/Egyptian/qa.html"
+          }   
           }
         ]
       },
@@ -66,7 +83,10 @@
                 "url": "https://www.youtube.com/embed/WFOApNmVwm0?t=51"
               }
             ],
-            "qa_pdf": "data/Physics/Chapter1/qa.pdf"
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Matter/qa.html"
+          }   
           }
         ]
       },
@@ -82,7 +102,10 @@
                 "url": "https://www.youtube.com/embed/w_jhb7XOZkk?t=103"
               }
             ],
-            "qa_pdf": "data/Chemistry/Chapter1/qa.pdf"
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Chapter1/qa.html"
+          }            
           }
         ]
       },
@@ -98,7 +121,10 @@
                 "url": "https://www.youtube.com/embed/ZaM6IB-a7co"
               }
             ],
-            "qa_pdf": "data/Geography/Chapter1/qa.pdf"
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter1/qa.html"
+          }         
           }
         ]
       },
@@ -130,7 +156,10 @@
                 "url": "https://www.youtube.com/embed/An7CEzAG8fM"
               }
             ],
-            "qa_pdf": "data/Hindi/Chapter1/qa.pdf"
+            "qa": {
+              "type": "html",
+              "path": "data/Hindi/DhanKikhoz/qa.html"
+          }
           }
         ]
       }
