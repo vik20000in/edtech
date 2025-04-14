@@ -6,7 +6,7 @@ body {
     background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb);
     color: #333;
     transition: background-color 0.5s ease, color 0.5s ease;
-    overflow: hidden;
+    overflow: auto; /* Allow scrolling */
 }
 
 header {
@@ -140,7 +140,8 @@ iframe, video, embed {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-height: 70vh; /* Set a maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: scroll; /* Force vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling for touch devices */
 }
 
 .qa-header {
