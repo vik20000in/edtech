@@ -11,6 +11,18 @@ function loadData() {
         .catch(error => console.error('Error loading data:', error));
 }
 
+function toggleScrollButtons(visible) {
+    const scrollUp = document.getElementById('scroll-up');
+    const scrollDown = document.getElementById('scroll-down');
+    if (visible) {
+        scrollUp.classList.add('visible');
+        scrollDown.classList.add('visible');
+    } else {
+        scrollUp.classList.remove('visible');
+        scrollDown.classList.remove('visible');
+    }
+}
+
 function render() {
     const content = document.getElementById('content');
     const backButton = document.getElementById('back-button');
@@ -21,20 +33,25 @@ function render() {
     if (currentState.type === 'main_menu') {
         backButton.style.display = 'none';
         renderMainMenu();
+        toggleScrollButtons(false); // Hide scroll buttons
     } else {
         backButton.style.display = 'block';
         if (currentState.type === 'subject_menu') {
             renderSubjectMenu(currentState.subject);
+            toggleScrollButtons(false); // Hide scroll buttons
         } else if (currentState.type === 'chapter_menu') {
             renderChapterMenu(currentState.subject, currentState.chapter);
+            toggleScrollButtons(false); // Hide scroll buttons
         } else if (currentState.type === 'video') {
             renderVideo(currentState.subject, currentState.chapter, currentState.lesson);
+            toggleScrollButtons(false); // Hide scroll buttons
         } else if (currentState.type === 'pdf') {
             renderPDF(currentState.subject, currentState.chapter);
-        }else if (currentState.type === 'html') {
+            toggleScrollButtons(false); // Hide scroll buttons
+        } else if (currentState.type === 'html') {
             loadQA(currentState.subject, currentState.chapter);
+        }
     }
-}
 }
 
 function renderMainMenu() {
@@ -166,6 +183,9 @@ async function loadQA(subjectName, chapterName) {
         
         const qaContainer = document.querySelector('#qa-section');
         qaContainer.innerHTML = html;
+
+        // Show scroll buttons
+        toggleScrollButtons(true);
     } catch (error) {
         console.error('Error loading Q&A:', error);
         content.innerHTML = `
@@ -174,6 +194,9 @@ async function loadQA(subjectName, chapterName) {
                 <p>Failed to load Q&A content for ${chapterName}</p>
             </div>
         `;
+
+        // Hide scroll buttons
+        toggleScrollButtons(false);
     }
 }
 
@@ -207,6 +230,20 @@ document.getElementById('back-button').addEventListener('click', () => {
     if (history.length > 1) {
         history.pop();
         render();
+    }
+});
+
+document.getElementById('scroll-up').addEventListener('click', () => {
+    const content = document.querySelector('.qa-wrapper');
+    if (content) {
+        content.scrollBy({ top: -100, behavior: 'smooth' }); // Scroll up by 100px
+    }
+});
+
+document.getElementById('scroll-down').addEventListener('click', () => {
+    const content = document.querySelector('.qa-wrapper');
+    if (content) {
+        content.scrollBy({ top: 100, behavior: 'smooth' }); // Scroll down by 100px
     }
 });
 

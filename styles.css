@@ -204,6 +204,37 @@ iframe, video, embed {
     margin: 0 0 10px 0;
 }
 
+.floating-button {
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.floating-button.visible {
+    display: flex; /* Show when the 'visible' class is added */
+}
+
+#scroll-up {
+    bottom: 80px; /* Position above the scroll-down button */
+}
+
+#scroll-down {
+    bottom: 20px; /* Position at the bottom */
+}
+
 /* Make the layout responsive */
 @media (max-width: 1200px) {
     .menu {
