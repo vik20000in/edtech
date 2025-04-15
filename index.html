@@ -18,7 +18,18 @@
         </div>
     </header>
     <main id="content">
-        <!-- Dynamic content will be inserted here -->
+        <div class="qa-wrapper">
+            <div class="qa-header">
+                <h2>${chapterName}</h2>
+                <p class="qa-subtitle">Questions and Answers</p>
+            </div>
+            <div class="qa-navigation">
+                <button id="prev-question" disabled>Previous</button>
+                <select id="page-dropdown"></select>
+                <button id="next-question">Next</button>
+            </div>
+            <div id="qa-section" class="qa-content"></div>
+        </div>
     </main>
 
     <!-- Floating buttons for scrolling -->

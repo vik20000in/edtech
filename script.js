@@ -166,12 +166,17 @@ async function loadQA(subjectName, chapterName) {
         const subject = data.subjects.find(s => s.name === subjectName);
         const chapter = subject.chapters.find(c => c.name === chapterName);
 
-        // Create HTML structure with better styling
+        // Create HTML structure with navigation buttons and page numbers
         content.innerHTML = `
             <div class="qa-wrapper">
                 <div class="qa-header">
                     <h2>${chapterName}</h2>
                     <p class="qa-subtitle">Questions and Answers</p>
+                </div>
+                <div class="qa-navigation">
+                    <button id="prev-question" disabled>Previous</button>
+                    <select id="page-dropdown"></select>
+                    <button id="next-question">Next</button>
                 </div>
                 <div id="qa-section" class="qa-content"></div>
             </div>
@@ -180,12 +185,12 @@ async function loadQA(subjectName, chapterName) {
         const response = await fetch(chapter.qa.path);
         if (!response.ok) throw new Error('Failed to load Q&A');
         const html = await response.text();
-        
+
         const qaContainer = document.querySelector('#qa-section');
         qaContainer.innerHTML = html;
 
-        // Show scroll buttons
-        toggleScrollButtons(true);
+        // Initialize paging
+        initializePaging();
     } catch (error) {
         console.error('Error loading Q&A:', error);
         content.innerHTML = `
@@ -194,10 +199,56 @@ async function loadQA(subjectName, chapterName) {
                 <p>Failed to load Q&A content for ${chapterName}</p>
             </div>
         `;
-
-        // Hide scroll buttons
-        toggleScrollButtons(false);
     }
+}
+
+function initializePaging() {
+    const questions = document.querySelectorAll('.qa-item');
+    let currentQuestionIndex = 0;
+
+    const prevButton = document.getElementById('prev-question');
+    const nextButton = document.getElementById('next-question');
+    const pageDropdown = document.getElementById('page-dropdown');
+
+    // Populate dropdown
+    pageDropdown.innerHTML = '';
+    questions.forEach((_, idx) => {
+        const option = document.createElement('option');
+        option.value = idx;
+        option.textContent = `Page ${idx + 1} of ${questions.length}`;
+        pageDropdown.appendChild(option);
+    });
+
+    // Update question visibility
+    function updateQuestionVisibility() {
+        questions.forEach((question, index) => {
+            question.style.display = index === currentQuestionIndex ? 'block' : 'none';
+        });
+        prevButton.disabled = currentQuestionIndex === 0;
+        nextButton.disabled = currentQuestionIndex === questions.length - 1;
+        pageDropdown.value = currentQuestionIndex;
+    }
+
+    prevButton.addEventListener('click', () => {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            updateQuestionVisibility();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            updateQuestionVisibility();
+        }
+    });
+
+    pageDropdown.addEventListener('change', (e) => {
+        currentQuestionIndex = parseInt(e.target.value, 10);
+        updateQuestionVisibility();
+    });
+
+    updateQuestionVisibility();
 }
 
 function formatYouTubeUrl(url) {

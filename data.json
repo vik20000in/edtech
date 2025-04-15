@@ -68,6 +68,20 @@
               "type": "html",
               "path": "data/history/Egyptian/qa.html"
           }   
+          },
+          {
+            "name": "The Mesopotamian Civilization",
+            "lessons": [
+              {
+                "title": "Introduction to Mesopotamia",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7glMyuMY84w"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/History/MesopotamianCivilization/qa.html"
+            }
           }
         ]
       },
