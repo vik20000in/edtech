@@ -1,5 +1,6 @@
 let data;
 let history = [{ type: 'main_menu' }];
+let autoSpeakEnabled = false;
 
 function loadData() {
     fetch('data.json')
@@ -170,13 +171,14 @@ async function loadQA(subjectName, chapterName) {
         content.innerHTML = `
             <div class="qa-wrapper">
                 <div class="qa-header">
-                    <h2>${chapterName}</h2>
-                    <p class="qa-subtitle">Questions and Answers</p>
+                    <h2>${chapterName}</h2>                   
                 </div>
                 <div class="qa-navigation">
                     <button id="prev-question" disabled>Previous</button>
                     <select id="page-dropdown"></select>
                     <button id="next-question">Next</button>
+                    <button id="speak-current" title="Speak Current Q&A">🔊 Speak</button>
+                    <button id="toggle-auto-speak" title="Auto Speak Q&A">🔈 Auto Speak: <span id="auto-speak-status">Off</span></button>
                 </div>
                 <div id="qa-section" class="qa-content"></div>
             </div>
@@ -202,6 +204,33 @@ async function loadQA(subjectName, chapterName) {
     }
 }
 
+function speakText(text) {
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+
+    // Try to select an Indian English or Hindi voice
+    const voices = window.speechSynthesis.getVoices();
+    const indianVoice = voices.find(v =>
+        v.lang === 'en-IN' || v.lang === 'hi-IN' ||
+        v.name.toLowerCase().includes('india')
+    );
+    if (indianVoice) {
+        utter.voice = indianVoice;
+    }
+
+    window.speechSynthesis.speak(utter);
+}
+
+function getCurrentQA() {
+    const questions = document.querySelectorAll('.qa-item');
+    const currentIndex = parseInt(document.getElementById('page-dropdown').value, 10);
+    const current = questions[currentIndex];
+    if (!current) return '';
+    const q = current.querySelector('.question')?.innerText || '';
+    const a = current.querySelector('.answer')?.innerText || '';
+    return `${q} ${a}`;
+}
+
 function initializePaging() {
     const questions = document.querySelectorAll('.qa-item');
     let currentQuestionIndex = 0;
@@ -209,6 +238,9 @@ function initializePaging() {
     const prevButton = document.getElementById('prev-question');
     const nextButton = document.getElementById('next-question');
     const pageDropdown = document.getElementById('page-dropdown');
+    const speakCurrentBtn = document.getElementById('speak-current');
+    const toggleAutoSpeakBtn = document.getElementById('toggle-auto-speak');
+    const autoSpeakStatus = document.getElementById('auto-speak-status');
 
     // Populate dropdown
     pageDropdown.innerHTML = '';
@@ -219,7 +251,22 @@ function initializePaging() {
         pageDropdown.appendChild(option);
     });
 
-    // Update question visibility
+    // Add speak button to each question if not present
+    questions.forEach(q => {
+        if (!q.querySelector('.speak-this')) {
+            const btn = document.createElement('button');
+            btn.className = 'speak-this';
+            btn.title = 'Speak this Q&A';
+            btn.textContent = '🔊';
+            btn.addEventListener('click', () => {
+                const qText = q.querySelector('.question')?.innerText || '';
+                const aText = q.querySelector('.answer')?.innerText || '';
+                speakText(`${qText} ${aText}`);
+            });
+            q.appendChild(btn);
+        }
+    });
+
     function updateQuestionVisibility() {
         questions.forEach((question, index) => {
             question.style.display = index === currentQuestionIndex ? 'block' : 'none';
@@ -227,6 +274,10 @@ function initializePaging() {
         prevButton.disabled = currentQuestionIndex === 0;
         nextButton.disabled = currentQuestionIndex === questions.length - 1;
         pageDropdown.value = currentQuestionIndex;
+
+        if (autoSpeakEnabled) {
+            setTimeout(() => speakText(getCurrentQA()), 300);
+        }
     }
 
     prevButton.addEventListener('click', () => {
@@ -246,6 +297,16 @@ function initializePaging() {
     pageDropdown.addEventListener('change', (e) => {
         currentQuestionIndex = parseInt(e.target.value, 10);
         updateQuestionVisibility();
+    });
+
+    speakCurrentBtn.addEventListener('click', () => {
+        speakText(getCurrentQA());
+    });
+
+    toggleAutoSpeakBtn.addEventListener('click', () => {
+        autoSpeakEnabled = !autoSpeakEnabled;
+        autoSpeakStatus.textContent = autoSpeakEnabled ? 'On' : 'Off';
+        if (autoSpeakEnabled) speakText(getCurrentQA());
     });
 
     updateQuestionVisibility();
