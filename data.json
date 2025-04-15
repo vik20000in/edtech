@@ -43,6 +43,15 @@
                 "title": "Leaf",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
+              },{
+                "title": "Type of Leaf",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YCFXzZBLpDI"
+              },
+              {
+                "title": "Parts of Leaf with QandA",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/AQ2nsGgcDv4"
               }
             ],
             "qa": {
@@ -95,6 +104,10 @@
                 "title": "Matter",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/WFOApNmVwm0?t=51"
+              },{ 
+                "title": "orce of Adhesion& Cohesion, Change in State of Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/q-Q003vBIP4"
               }
             ],
             "qa": {
@@ -162,7 +175,7 @@
         "name": "Hindi",
         "chapters": [
           {
-            "name": "Chapter 1: Introduction",
+            "name": "Chapter 1: Dhan Ki khoz",
             "lessons": [
               {
                 "title": "Dhan Ki khoz",
@@ -174,6 +187,58 @@
               "type": "html",
               "path": "data/Hindi/DhanKikhoz/qa.html"
           }
+          },  
+          {
+            "name": "Chapter 2: Chidiya",
+            "lessons": [
+              {
+                "title": "Chidiya",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/0v1a4g3r8mE"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Hindi/Chidiya/qa.html"
+          }            
+          }
+        ]
+      },
+      {
+        "name": "English Literature",
+        "chapters": [
+          {
+            "name": "The Nightingale & the glow worm",
+            "lessons": [
+              {
+                "title": "The Nightingale & the glow worm",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/5k-n0_gpwLQ"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/English/TheHappyPrince/qa.html"
+            }
+          }
+        ]
+      },
+      {
+        "name": "English Language",
+        "chapters": [
+          {
+            "name": " Types of Sentences ",
+            "lessons": [
+              {
+                "title": " Types of Sentences ",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/NDR4fAXKYvk"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/EnglishLanguage/Nouns/qa.html"
+            }
           }
         ]
       }
