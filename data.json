@@ -80,7 +80,7 @@
             ],
             "qa": {
               "type": "html",
-              "path": "data/History/MesopotamianCivilization/qa.html"
+              "path": "data/history/MesopotamianCivilization/qa.html"
             }
           }
         ]
