@@ -114,6 +114,25 @@
               "type": "html",
               "path": "data/Physics/Matter/qa.html"
           }   
+          },
+          {
+            "name": "Chapter 2: Physical Quantities and Measurement",
+            "lessons": [
+              {
+                "title": "Physical Quantities and Measurement part 1",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/5lZ_r4C4Pho&t=3s"
+              },
+              {
+                "title": "Physical Quantities and Measurement part 2",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ENc9sR4L4r0"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/PhysicalQuantities/qa.html"
+          }   
           }
         ]
       },
@@ -132,6 +151,20 @@
             "qa": {
               "type": "html",
               "path": "data/Chemistry/Chapter1/qa.html"
+          }            
+          },  
+          {
+            "name": "Chapter 2: Matter",
+            "lessons": [
+              {
+                "title": "Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/CZlc0W0Pb14"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Matter/qa.html"
           }            
           }
         ]
@@ -189,12 +222,12 @@
           }
           },  
           {
-            "name": "Chapter 2: Chidiya",
+            "name": "Chapter 2: Khilonewala",
             "lessons": [
               {
-                "title": "Chidiya",
+                "title": "Khilonewala",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/0v1a4g3r8mE"
+                "url": "https://www.youtube.com/embed/cO0G6PIWGn4"
               }
             ],
             "qa": {
@@ -214,6 +247,20 @@
                 "title": "The Nightingale & the glow worm",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/5k-n0_gpwLQ"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/English/TheHappyPrince/qa.html"
+            }
+          },
+          {
+            "name": "Idgah",
+            "lessons": [
+              {
+                "title": "Idgah",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/sYbosNuSaT8"
               }
             ],
             "qa": {
