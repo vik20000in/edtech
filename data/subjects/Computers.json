@@ -62,6 +62,55 @@
               }
             ],
             "qa_pdf": "data/Computers/Chapter2/qa.pdf"
-          }
-        ]
+          },
+          { 
+            "name": "Chapter 3: MS word mail merge",
+            "lessons": [
+              {
+                "title": "MS word mail merge",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/0r1v2g3x8aE"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter3/qa.pdf"
+          },
+          {
+            "name": "Chapter 4: MS excel",
+            "lessons": [
+              {
+                "title": "MS excel",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/rXTfYBQ7yu0"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter4/qa.pdf"  
+          },
+          {
+            "name": "Chapter 5: QBasic",
+            "lessons": [
+              {
+                "title": "QBasic",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/Y-Dd11c2xNA" 
+                           },{
+                "title": "QBasic 1",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/ncfSMqgL_-w"
+                           }
+            ],  
+
+            "qa_pdf": "data/Computers/Chapter5/qa.pdf"
+          },
+          {
+            "name": "Chapter 6: Internet",
+            "lessons": [
+              {
+                "title": "Internet",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/zqq_6G2V7No"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter6/qa.pdf"
+          } 
+          ]
       }

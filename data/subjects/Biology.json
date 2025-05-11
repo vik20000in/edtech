@@ -23,6 +23,55 @@
                 "type": "html",
                 "path": "data/Biology/Chapter1/qa.html"
             }
+          },  { 
+            "name": "Chapter 2: Flower",
+            "lessons": [
+              {
+                "title": "Flower",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/g1_4Llbw2uo"
+              },{
+                "title": "Parts of Flower with QandA",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/SitGpQiCoyI"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter2/qa.html"
+            } 
+          },
+          { 
+            "name": "Chapter 3: Cell: The structure and functions",
+            "lessons": [
+              {
+                "title":  "Cell: The structure and functions",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/W2f0a3f4j4M"
+              },{
+                "title": "Cell: The structure and functions with QandA",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/j3YvDSXU3ng"
+              } 
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter3/qa.html"
+            } 
+          },
+          { 
+            "name": "Chapter 4: Habitat and Adaptation",
+            "lessons": [
+              {
+                "title":  "Habitat and Adaptation",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/PN9oEYMmZ4w"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter4/qa.html"
+            } 
           }
         ]
       }
