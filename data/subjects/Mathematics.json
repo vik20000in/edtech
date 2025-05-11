@@ -29,78 +29,142 @@
         "path": "data/Mathematics/FundamentalsForAlgebra/qa.html"
       }
     },
-    { 
-            "name": "Chapter 2: OPERATIONS ON WHOLE NUMBERS",
-            "lessons": [
-              {
-                "title": "OPERATIONS ON WHOLE NUMBERS",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/39TVRTBgtUU"
-              },{
-                "title": "Addition of Whole Numbers",
-                "type": "youtube",  
-                "url": "https://www.youtube.com/embed/7mykulrctdo"}
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Mathematics/Chapter2/qa.html"
-            }
-          },{
-            "name": "Chapter 3: Integers",
-            "lessons": [
-              {
-                "title": "Integers",
-                "type": "youtube",  
-                "url": "https://www.youtube.com/embed/Q5wL0h2FpPA"
-              },
-              {
-                "title": "Integers 2",
-                "type": "youtube",  
-                "url": "https://www.youtube.com/embed/QMyGydI67ZE"
-              }]
+    {
+      "name": "Chapter 2: OPERATIONS ON WHOLE NUMBERS",
+      "lessons": [
+        {
+          "title": "OPERATIONS ON WHOLE NUMBERS",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/39TVRTBgtUU"
+        },
+        {
+          "title": "Addition of Whole Numbers",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/7mykulrctdo"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter2/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 3: Integers",
+      "lessons": [
+        {
+          "title": "Integers",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Q5wL0h2FpPA"
+        },
+        {
+          "title": "Integers 2",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/QMyGydI67ZE"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Fractions",
+      "lessons": [
+        {
+          "title": "Fractions",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/8U352KTw9og"
+        },
+        {
+          "title": "Fractions 2",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/0Ms0K55rSS0"
+        },
+        {
+          "title": "Fractions 3",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/jebYNIttpnA"
+        },
+        {
+          "title": "Fractions 4",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
+        },
+        {
+          "title": "Fractions 5",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/kCJlAuFsg"
+        },
+        {
+          "title": "Fractions 6",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/OBx8YMBjTTI"
+        },
+        {
+          "title": "Fractions 7",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter4/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 5: PLAYING WITH NUMBERS",
+      "lessons": [
+        {
+          "title": "Playing with Numbers - Introduction",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Q_FKAmAsIQI"
+        }
+       ,{
+          "title": "Playing with Numbers - Introduction 2",
+          "type": "youtube",    
+          "url": "https://www.youtube.com/embed/VG0e2RUaOOo"},
+          { 
+          "title": "Playing with Numbers - Introduction 3",
+          "type": "youtube",  
+          "url": "https://www.youtube.com/embed/X0iJdHVfvWc"
+          }
+          ,{
+           "title": "Playing with Numbers - Introduction 4",
+          "type": "youtube",  
+          "url": "https://www.youtube.com/embed/CmOESSCXt1U"},
+          {   
+          "title": "Playing with Numbers - Introduction 5",
+          "type": "youtube",  
+          "url": "https://www.youtube.com/embed/JA36uWfIoAQ"
           },
-            { 
-              "name": "Chapter 4: Fractions",
-              "lessons": [
-                {
-                  "title": "Fractions",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/8U352KTw9og"
-                },
-                {
-                  "title": "Fractions 2",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/0Ms0K55rSS0"
-                },  
-                {
-                  "title": "Fractions 3",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/jebYNIttpnA"
-                },
-                {
-                  "title": "Fractions 4",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
-                },  
-                {
-                  "title": "Fractions 5",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/kCJlAuFsg"
-                },
-                {
-                  "title": "Fractions 6",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/OBx8YMBjTTI"
-                },
-                {
-                  "title": "Fractions 7",
-                  "type": "youtube",  
-                  "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
-                }
-              ],
-              "qa": {
-                "type": "html",
-                "path": "data/Mathematics/Chapter4/qa.html"
-            }}
+          {
+          "title": "Playing with Numbers - Introduction 6", 
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/WNXln3VkcaQ"
+          },
+          {
+          "title": "Playing with Numbers - Introduction 7",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/56ylvRu02TU"
+          }
+          ,
+          {
+          "title": "Playing with Numbers - Introduction 8",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/gl-7qwI7O5A"
+          },
+          {
+          "title": "Playing with Numbers - Introduction 9",          
+          "type": "youtube",          
+          "url": "https://www.youtube.com/embed/c3d-Xw-VVb0"
+          },
+          {
+          "title": "Playing with Numbers - Introduction 10",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/PlMsSqqqnpE"
+          }
+          
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/PlayingWithNumbers/qa.html"
+      }
+    }
   ]
 }
