@@ -1,0 +1,67 @@
+ {
+        "name": "Computers",
+        "chapters": [
+          {
+            "name": "Introduction to Languages",
+            "lessons": [
+              {
+                "title": "Programming Languages Basics",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/oNv7sqR5ozg"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter1/qa.pdf"
+          },
+          {
+            "name": "Chapter 2: MS word tabular data",
+            "lessons": [
+              {
+                "title": "tabular Data",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/O2Pa5PAakSs"
+              },
+              {
+                "title": "MS word tabular data 1",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YiGVyAx958k"
+              },
+              {
+                "title": "MS word tabular data 2",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/Rl9FE6PvX8"
+              },
+              {
+                "title": "MS word tabular data 3",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ZDokZF0G0i8"
+              },  
+              {
+                "title": "MS word tabular data 4",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/n0TwhfzNvHk"
+              },
+              {
+                "title": "MS word tabular data 5",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/0r1v2g3x8aE"
+              },  
+              {
+                "title": "MS word tabular data 6",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/rbli_vkHeW0"
+              },
+              {
+                "title": "MS word tabular data 7",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ZQfcg-QLvUM"
+              },
+              {
+                "title": "MS word tabular data 8",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/zkGHOxHARH0"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter2/qa.pdf"
+          }
+        ]
+      }

@@ -1,4 +1,5 @@
 let data;
+let subjectsData = {}; // Cache for loaded subject files
 let history = [{ type: 'main_menu' }];
 let autoSpeakEnabled = false;
 
@@ -10,6 +11,26 @@ function loadData() {
             render();
         })
         .catch(error => console.error('Error loading data:', error));
+}
+
+// New: Load subject data from its file if not already loaded
+function loadSubjectData(subjectName, callback) {
+    const subjectMeta = data.subjects.find(s => s.name === subjectName);
+    if (!subjectMeta) {
+        console.error('Subject not found:', subjectName);
+        return;
+    }
+    if (subjectsData[subjectName]) {
+        callback(subjectsData[subjectName]);
+        return;
+    }
+    fetch(subjectMeta.file)
+        .then(response => response.json())
+        .then(subjectJson => {
+            subjectsData[subjectName] = subjectJson;
+            callback(subjectJson);
+        })
+        .catch(error => console.error('Error loading subject data:', error));
 }
 
 function toggleScrollButtons(visible) {
@@ -77,19 +98,20 @@ function selectSubject(subjectName) {
 }
 
 function renderSubjectMenu(subjectName) {
-    const content = document.getElementById('content');
-    const subject = data.subjects.find(s => s.name === subjectName);
-    content.innerHTML = `<h2>${subjectName}</h2><div class="menu"></div>`;
-    const menu = content.querySelector('.menu');
-    subject.chapters.forEach(chapter => {
-        const button = document.createElement('button');
-        button.className = 'menu-item';
-        button.textContent = chapter.name;
-        button.onclick = () => selectChapter(subjectName, chapter.name);
-        menu.appendChild(button);
+    loadSubjectData(subjectName, subjectData => {
+        const content = document.getElementById('content');
+        content.innerHTML = `<h2>${subjectName}</h2><div class="menu"></div>`;
+        const menu = content.querySelector('.menu');
+        subjectData.chapters.forEach(chapter => {
+            const button = document.createElement('button');
+            button.className = 'menu-item';
+            button.textContent = chapter.name;
+            button.onclick = () => selectChapter(subjectName, chapter.name);
+            menu.appendChild(button);
+        });
+        const firstItem = menu.querySelector('.menu-item');
+        if (firstItem) firstItem.focus();
     });
-    const firstItem = menu.querySelector('.menu-item');
-    if (firstItem) firstItem.focus();
 }
 
 function selectChapter(subjectName, chapterName) {
@@ -98,27 +120,28 @@ function selectChapter(subjectName, chapterName) {
 }
 
 function renderChapterMenu(subjectName, chapterName) {
-    const content = document.getElementById('content');
-    const subject = data.subjects.find(s => s.name === subjectName);
-    const chapter = subject.chapters.find(c => c.name === chapterName);
-    content.innerHTML = `<h2>${chapterName}</h2><div class="menu"></div>`;
-    const menu = content.querySelector('.menu');
+    loadSubjectData(subjectName, subjectData => {
+        const content = document.getElementById('content');
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
+        content.innerHTML = `<h2>${chapterName}</h2><div class="menu"></div>`;
+        const menu = content.querySelector('.menu');
 
-    chapter.lessons.forEach(lesson => {
-        const button = document.createElement('button');
-        button.className = 'menu-item';
-        button.textContent = lesson.title;
-        button.onclick = () => selectLesson(subjectName, chapterName, lesson.title);
-        menu.appendChild(button);
+        chapter.lessons.forEach(lesson => {
+            const button = document.createElement('button');
+            button.className = 'menu-item';
+            button.textContent = lesson.title;
+            button.onclick = () => selectLesson(subjectName, chapterName, lesson.title);
+            menu.appendChild(button);
+        });
+
+        const qaButton = document.createElement('button');
+        qaButton.className = 'menu-item';
+        qaButton.textContent = 'Q&A';
+        qaButton.onclick = () => selectQA(subjectName, chapterName);
+        menu.appendChild(qaButton);
+        const firstItem = menu.querySelector('.menu-item');
+        if (firstItem) firstItem.focus();
     });
-
-    const qaButton = document.createElement('button');
-    qaButton.className = 'menu-item';
-    qaButton.textContent = 'Q&A';
-    qaButton.onclick = () => selectQA(subjectName, chapterName);
-    menu.appendChild(qaButton);
-    const firstItem = menu.querySelector('.menu-item');
-    if (firstItem) firstItem.focus();
 }
 
 function selectLesson(subjectName, chapterName, lessonTitle) {
@@ -127,47 +150,48 @@ function selectLesson(subjectName, chapterName, lessonTitle) {
 }
 
 function selectQA(subjectName, chapterName) {
-    const subject = data.subjects.find(s => s.name === subjectName);
-    const chapter = subject.chapters.find(c => c.name === chapterName);
+    loadSubjectData(subjectName, subjectData => {
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
 
-    // Check if chapter has HTML Q&A
-    if (chapter.qa && chapter.qa.type === 'html') {
-        history.push({ type: 'html', subject: subjectName, chapter: chapterName });
-    } 
-    // Fallback to PDF
-    else if (chapter.qa_pdf) {
-        history.push({ type: 'pdf', subject: subjectName, chapter: chapterName });
-    }
-    render();
+        // Check if chapter has HTML Q&A
+        if (chapter.qa && chapter.qa.type === 'html') {
+            history.push({ type: 'html', subject: subjectName, chapter: chapterName });
+        } 
+        // Fallback to PDF
+        else if (chapter.qa_pdf) {
+            history.push({ type: 'pdf', subject: subjectName, chapter: chapterName });
+        }
+        render();
+    });
 }
 
 function renderVideo(subjectName, chapterName, lessonTitle) {
-    const content = document.getElementById('content');
-    const subject = data.subjects.find(s => s.name === subjectName);
-    const chapter = subject.chapters.find(c => c.name === chapterName);
-    const lesson = chapter.lessons.find(l => l.title === lessonTitle);
+    loadSubjectData(subjectName, subjectData => {
+        const content = document.getElementById('content');
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
+        const lesson = chapter.lessons.find(l => l.title === lessonTitle);
 
-    if (lesson.type === 'youtube') {
-        content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><iframe src="${formatYouTubeUrl(lesson.url)}" frameborder="0" allowfullscreen></iframe></div>`;
-    } else if (lesson.type === 'local') {
-        content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><video controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
-    }
+        if (lesson.type === 'youtube') {
+            content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><iframe src="${formatYouTubeUrl(lesson.url)}" frameborder="0" allowfullscreen></iframe></div>`;
+        } else if (lesson.type === 'local') {
+            content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><video controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
+        }
+    });
 }
 
 function renderPDF(subjectName, chapterName) {
-    const content = document.getElementById('content');
-    const subject = data.subjects.find(s => s.name === subjectName);
-    const chapter = subject.chapters.find(c => c.name === chapterName);
-    content.innerHTML = `<h2>Q&A for ${chapterName}</h2><div class="pdf-container"><embed src="${chapter.qa_pdf}" type="application/pdf"></div>`;
+    loadSubjectData(subjectName, subjectData => {
+        const content = document.getElementById('content');
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
+        content.innerHTML = `<h2>Q&A for ${chapterName}</h2><div class="pdf-container"><embed src="${chapter.qa_pdf}" type="application/pdf"></div>`;
+    });
 }
 
 async function loadQA(subjectName, chapterName) {
-    try {
+    loadSubjectData(subjectName, async subjectData => {
         const content = document.getElementById('content');
-        const subject = data.subjects.find(s => s.name === subjectName);
-        const chapter = subject.chapters.find(c => c.name === chapterName);
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
 
-        // Create HTML structure with navigation buttons and page numbers
         content.innerHTML = `
             <div class="qa-wrapper">
                 <div class="qa-header">
@@ -184,24 +208,23 @@ async function loadQA(subjectName, chapterName) {
             </div>
         `;
 
-        const response = await fetch(chapter.qa.path);
-        if (!response.ok) throw new Error('Failed to load Q&A');
-        const html = await response.text();
-
-        const qaContainer = document.querySelector('#qa-section');
-        qaContainer.innerHTML = html;
-
-        // Initialize paging
-        initializePaging();
-    } catch (error) {
-        console.error('Error loading Q&A:', error);
-        content.innerHTML = `
-            <div class="qa-error">
-                <h2>Error Loading Q&A</h2>
-                <p>Failed to load Q&A content for ${chapterName}</p>
-            </div>
-        `;
-    }
+        try {
+            const response = await fetch(chapter.qa.path);
+            if (!response.ok) throw new Error('Failed to load Q&A');
+            const html = await response.text();
+            const qaContainer = document.querySelector('#qa-section');
+            qaContainer.innerHTML = html;
+            initializePaging();
+        } catch (error) {
+            console.error('Error loading Q&A:', error);
+            content.innerHTML = `
+                <div class="qa-error">
+                    <h2>Error Loading Q&A</h2>
+                    <p>Failed to load Q&A content for ${chapterName}</p>
+                </div>
+            `;
+        }
+    });
 }
 
 function speakText(text) {

@@ -1,0 +1,33 @@
+{
+        "name": "History",
+        "chapters": [
+          {
+            "name": "Egyptian History",
+            "lessons": [
+              {
+                "title": "Egyptian History video",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
+              }
+            ]   ,
+            "qa": {
+              "type": "html",
+              "path": "data/history/Egyptian/qa.html"
+          }   
+          },
+          {
+            "name": "The Mesopotamian Civilization",
+            "lessons": [
+              {
+                "title": "Introduction to Mesopotamia",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7glMyuMY84w"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/MesopotamianCivilization/qa.html"
+            }
+          }
+        ]
+      }

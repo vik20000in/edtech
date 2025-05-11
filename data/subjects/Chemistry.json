@@ -1,0 +1,33 @@
+ {
+        "name": "Chemistry",
+        "chapters": [
+          {
+            "name": "Chapter 1: Introduction to chemistry",
+            "lessons": [
+              {
+                "title": "Introduction to chemistry",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/w_jhb7XOZkk?t=103"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Chapter1/qa.html"
+          }            
+          },  
+          {
+            "name": "Chapter 2: Matter",
+            "lessons": [
+              {
+                "title": "Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/CZlc0W0Pb14"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Matter/qa.html"
+          }            
+          }
+        ]
+      }

@@ -1,0 +1,33 @@
+{
+        "name": "Geography",
+        "chapters": [
+          {
+            "name": "Chapter Maps",
+            "lessons": [
+              {
+                "title": "Introduction to Maps",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ZaM6IB-a7co"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter1/qa.html"
+          }         
+          },  
+          {
+            "name": "Chapter 2: landForms",
+            "lessons": [
+              {
+                "title": "landform",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/WwkCjtO2gEc"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter2/qa.html"
+          }            
+          }
+        ]
+      }

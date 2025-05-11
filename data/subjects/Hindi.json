@@ -1,0 +1,33 @@
+{
+        "name": "Hindi",
+        "chapters": [
+          {
+            "name": "Chapter 1: Dhan Ki khoz",
+            "lessons": [
+              {
+                "title": "Dhan Ki khoz",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/An7CEzAG8fM"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Hindi/DhanKikhoz/qa.html"
+          }
+          },  
+          {
+            "name": "Chapter 2: Khilonewala",
+            "lessons": [
+              {
+                "title": "Khilonewala",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/cO0G6PIWGn4"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Hindi/Chidiya/qa.html"
+          }            
+          }
+        ]
+      }

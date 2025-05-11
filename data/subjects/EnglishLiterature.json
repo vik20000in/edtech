@@ -1,0 +1,33 @@
+ {
+        "name": "English Literature",
+        "chapters": [
+          {
+            "name": "The Nightingale & the glow worm",
+            "lessons": [
+              {
+                "title": "The Nightingale & the glow worm",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/5k-n0_gpwLQ"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/English/TheHappyPrince/qa.html"
+            }
+          },
+          {
+            "name": "Idgah",
+            "lessons": [
+              {
+                "title": "Idgah",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/sYbosNuSaT8"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/English/TheHappyPrince/qa.html"
+            }
+          }
+        ]
+      }

@@ -1,0 +1,28 @@
+{
+        "name": "Biology",
+        "chapters": [
+          {
+            "name": "Chapter 1: Leaf",
+            "lessons": [
+              {
+                "title": "Leaf",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
+              },{
+                "title": "Type of Leaf",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YCFXzZBLpDI"
+              },
+              {
+                "title": "Parts of Leaf with QandA",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/AQ2nsGgcDv4"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter1/qa.html"
+            }
+          }
+        ]
+      }

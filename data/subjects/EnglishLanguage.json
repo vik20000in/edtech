@@ -1,0 +1,19 @@
+{
+        "name": "English Language",
+        "chapters": [
+          {
+            "name": " Types of Sentences ",
+            "lessons": [
+              {
+                "title": " Types of Sentences ",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/NDR4fAXKYvk"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/EnglishLanguage/Nouns/qa.html"
+            }
+          }
+        ]
+      }

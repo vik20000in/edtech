@@ -1,0 +1,106 @@
+{
+  "name": "Mathematics",
+  "chapters": [
+    {
+      "name": "Chapter 1: Numbers",
+      "lessons": [
+        {
+          "title": "Introduction to Numbers",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/AF31lWJJSgg"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter1/qa.html"
+      }
+    },
+    {
+      "name": "Fundamentals for Algebra",
+      "lessons": [
+        {
+          "title": "Fundamentals for Algebra",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/nHVfIxiGYfc"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/FundamentalsForAlgebra/qa.html"
+      }
+    },
+    { 
+            "name": "Chapter 2: OPERATIONS ON WHOLE NUMBERS",
+            "lessons": [
+              {
+                "title": "OPERATIONS ON WHOLE NUMBERS",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/39TVRTBgtUU"
+              },{
+                "title": "Addition of Whole Numbers",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/7mykulrctdo"}
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Mathematics/Chapter2/qa.html"
+            }
+          },{
+            "name": "Chapter 3: Integers",
+            "lessons": [
+              {
+                "title": "Integers",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/Q5wL0h2FpPA"
+              },
+              {
+                "title": "Integers 2",
+                "type": "youtube",  
+                "url": "https://www.youtube.com/embed/QMyGydI67ZE"
+              }]
+          },
+            { 
+              "name": "Chapter 4: Fractions",
+              "lessons": [
+                {
+                  "title": "Fractions",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/8U352KTw9og"
+                },
+                {
+                  "title": "Fractions 2",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/0Ms0K55rSS0"
+                },  
+                {
+                  "title": "Fractions 3",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/jebYNIttpnA"
+                },
+                {
+                  "title": "Fractions 4",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
+                },  
+                {
+                  "title": "Fractions 5",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/kCJlAuFsg"
+                },
+                {
+                  "title": "Fractions 6",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/OBx8YMBjTTI"
+                },
+                {
+                  "title": "Fractions 7",
+                  "type": "youtube",  
+                  "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
+                }
+              ],
+              "qa": {
+                "type": "html",
+                "path": "data/Mathematics/Chapter4/qa.html"
+            }}
+  ]
+}

@@ -1,0 +1,42 @@
+ {
+        "name": "Physics",
+        "chapters": [
+          {
+            "name": "Chapter 1: Matter",
+            "lessons": [
+              {
+                "title": "Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/WFOApNmVwm0?t=51"
+              },{ 
+                "title": "orce of Adhesion& Cohesion, Change in State of Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/q-Q003vBIP4"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Matter/qa.html"
+          }   
+          },
+          {
+            "name": "Chapter 2: Physical Quantities and Measurement",
+            "lessons": [
+              {
+                "title": "Physical Quantities and Measurement part 1",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/5lZ_r4C4Pho&t=3s"
+              },
+              {
+                "title": "Physical Quantities and Measurement part 2",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ENc9sR4L4r0"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/PhysicalQuantities/qa.html"
+          }   
+          }
+        ]
+      }
