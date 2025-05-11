@@ -37,6 +37,25 @@
               "type": "html",
               "path": "data/Physics/PhysicalQuantities/qa.html"
           }   
+          },  
+          {
+            "name": "Chapter 3: Force",
+            "lessons": [
+              {
+                "title": "8sJMJjK9MQM",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/8sJMJjK9MQM"
+              },
+              {
+                "title": "Force 2",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/lFAaxDfl6EI"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Force/qa.html"
+          }   
           }
         ]
       }

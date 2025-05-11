@@ -28,6 +28,34 @@
               "type": "html",
               "path": "data/Chemistry/Matter/qa.html"
           }            
+          },  
+          {
+            "name": "Chapter 3: Common Laboratory Apparatus",
+            "lessons": [
+              {
+                "title": "Common Laboratory Apparatus",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/ORFmr9xgCAc"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/PhysicalQuantities/qa.html"
+          }            
+          },  
+          {
+            "name": "Chapter 4: Elements, Compounds, Symbol and Formulae",
+            "lessons": [
+              {
+                "title": "Elements, Compounds, Symbol and Formulae",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/jHHy4AXWunA"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Elements/qa.html"
+          }            
           }
         ]
       }

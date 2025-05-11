@@ -28,6 +28,34 @@
               "type": "html",
               "path": "data/Geography/Chapter2/qa.html"
           }            
+          },
+          {
+            "name": "Chapter 3: Water Bodies of the Earth",
+            "lessons": [
+              {
+                "title": "Water Bodies of the Earth",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/bZDKvLfz4Oo"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter3/qa.html"
+          }            
+          },
+          {
+            "name": "Chapter 4: North America",
+            "lessons": [
+              {
+                "title": "North America",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/z6g8O0OxdQg"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter4/qa.html"
+          }            
           }
         ]
       }

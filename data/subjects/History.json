@@ -28,6 +28,76 @@
               "type": "html",
               "path": "data/history/MesopotamianCivilization/qa.html"
             }
-          }
+          },
+          {
+            "name": "The Indus Valley Civilization",
+            "lessons": [
+              {
+                "title": "Indus Valley Civilization",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/gnL5IfaYUqA"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/IndusValleyCivilization/qa.html"
+            }
+          },
+          {
+            "name": "China",
+            "lessons": [
+              {
+                "title": "Ancient China",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/Icq_ZswSiTw"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/AncientChina/qa.html"
+            }
+          },
+          {
+            "name": "Early Vedic period",
+            "lessons": [
+              {
+                "title": "Early Vedic period",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/b07U5c7FN6c"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/Vedic/qa.html"
+            }
+          },
+            {
+            "name": "Rural Local Self- Government",
+            "lessons": [
+              {
+                "title": "Rural Local Self- Government",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/xlD6dYRnlFc"
+              }
+            ],  
+            "qa": {
+              "type": "html",
+              "path": "data/history/RuralLocalSelfGovernment/qa.html"
+            }
+          },
+          {
+            "name": "Urban Local Self- Government",
+            "lessons": [
+              {
+                "title": "Urban Local Self- Government",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/3m9dRyIvduE"
+              }
+            ],              
+              "qa": {
+                "type": "html",
+                "path": "data/history/UrbanLocalSelfGovernment/qa.html"
+              }
+            }          
         ]
       }
