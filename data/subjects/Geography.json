@@ -56,6 +56,19 @@
               "type": "html",
               "path": "data/Geography/Chapter4/qa.html"
           }            
+          },{
+            "name": "Agriculture ",
+            "lessons": [
+              {
+                "title": "Agriculture - Introduction",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/3xi6UiFw1t8"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Agriculture/qa.html"
+            }
           }
         ]
       }

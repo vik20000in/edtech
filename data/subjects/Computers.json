@@ -111,6 +111,17 @@
               }
             ],
             "qa_pdf": "data/Computers/Chapter6/qa.pdf"
+          },
+          {
+            "name": "Chapter 7: FILE MANAGEMENT",
+            "lessons": [
+              {
+                "title": "FILE MANAGEMENT",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/HdhYi4ZzzCs"
+              }
+            ],
+            "qa_pdf": "data/Computers/Chapter7/qa.pdf"
           } 
           ]
       }
