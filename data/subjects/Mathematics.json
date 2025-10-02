@@ -165,6 +165,28 @@
         "type": "html",
         "path": "data/Mathematics/PlayingWithNumbers/qa.html"
       }
+    },{
+     
+      "name": "Ratio and Proportion ",
+      "lessons": [{
+        "title": "Ratio and Proportion ",
+        "type": "youtube",
+        "url": "https://www.youtube.com/embed/9TYt_AU5aDQ"}],
+      "qa": {}   
+    },
+    {
+      "name": "Curve| Polygon| Angle",
+      "lessons": [
+        {
+          "title": "Curve| Polygon| Angle",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/FYTo54YBu_"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Algebra/qa.html"
+      }
     }
   ]
 }
