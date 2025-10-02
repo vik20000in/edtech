@@ -56,6 +56,21 @@
               "type": "html",
               "path": "data/Chemistry/Elements/qa.html"
           }            
+          },
+          { 
+            "name": "Chapter 5: Pure substances and Mixtures",
+            "lessons": [
+              {
+                "title": "Pure substances and Mixtures",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/nYAMBjiMF_0"
+              } 
+
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Mixtures/qa.html"
+          }            
           }
         ]
       }
