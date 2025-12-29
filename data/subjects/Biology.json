@@ -23,8 +23,9 @@
                 "type": "html",
                 "path": "data/Biology/Chapter1/qa.html"
             }
-          },  { 
-            "name": "Chapter 2: Flower",
+          },
+          {
+            "name": "Chapter 2: The Flower",
             "lessons": [
               {
                 "title": "Flower",
@@ -39,41 +40,28 @@
             "qa": {
                 "type": "html",
                 "path": "data/Biology/Chapter2/qa.html"
-            } 
+            }
           },
-          { 
+          {
             "name": "Chapter 3: Cell: The structure and functions",
             "lessons": [
               {
                 "title":  "Cell: The structure and functions",
-                "type": "youtube",  
+                "type": "youtube",
                 "url": "https://www.youtube.com/embed/W2f0a3f4j4M"
               },{
                 "title": "Cell: The structure and functions with QandA",
-                "type": "youtube",  
+                "type": "youtube",
                 "url": "https://www.youtube.com/embed/j3YvDSXU3ng"
-              } 
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter3/qa.html"
-            } 
-          },
-          { 
-            "name": "Chapter 4: Habitat and Adaptation",
-            "lessons": [
-              {
-                "title":  "Habitat and Adaptation",
-                "type": "youtube",  
-                "url": "https://www.youtube.com/embed/PN9oEYMmZ4w"
               }
             ],
             "qa": {
                 "type": "html",
-                "path": "data/Biology/Chapter/qa.html"
-            }} ,
-            { 
-            "name": "Digestive System",
+                "path": "data/Biology/Chapter3/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 4: Human Body: Digestive System",
             "lessons": [
               {
                 "title": "Digestive System",
@@ -83,7 +71,63 @@
             ],
             "qa": {
                 "type": "html",
+                "path": "data/Biology/Chapter4/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 5: Human Body: Respiratory System",
+            "lessons": [
+              {
+                "title": "Human Body: Respiratory System",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/qrE2VXFGqng"
+              }
+            ],
+            "qa": {
+                "type": "html",
                 "path": "data/Biology/Chapter5/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 6: Human Body: Circulatory System",
+            "lessons": [
+              {
+                "title": "Human Body: Circulatory System",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/zJ0ku1j7M5I"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter6/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 7: Disease and Hygiene",
+            "lessons": [
+              {
+                "title": "Disease and Hygiene",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/MhuYHHe7xoY"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter7/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 8: Habitat and Adaptation",
+            "lessons": [
+              {
+                "title":  "Habitat and Adaptation",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/PN9oEYMmZ4w"
+              }
+            ],
+            "qa": {
+                "type": "html",
+                "path": "data/Biology/Chapter8/qa.html"
             }
           }
         ]
