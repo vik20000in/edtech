@@ -7,69 +7,83 @@
               {
                 "title": "Matter",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/WFOApNmVwm0?t=51"
-              },{ 
-                "title": "orce of Adhesion& Cohesion, Change in State of Matter",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/q-Q003vBIP4"
+                "url": "https://www.youtube.com/embed/WFOApNmVwm0"
               }
             ],
             "qa": {
               "type": "html",
-              "path": "data/Physics/Matter/qa.html"
+              "path": "data/Physics/Chapter1/qa.html"
           }   
           },
           {
-            "name": "Chapter 2: Physical Quantities and Measurement",
+            "name": "Chapter 2: Physical Quantities and Measurements",
             "lessons": [
               {
-                "title": "Physical Quantities and Measurement part 1",
+                "title": "Physical Quantities and Measurements",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/5lZ_r4C4Pho"
-              },
-              {
-                "title": "Physical Quantities and Measurement part 2",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/ENc9sR4L4r0"
               }
             ],
             "qa": {
               "type": "html",
-              "path": "data/Physics/PhysicalQuantities/qa.html"
+              "path": "data/Physics/Chapter2/qa.html"
           }   
           },  
           {
             "name": "Chapter 3: Force",
             "lessons": [
               {
-                "title": "8sJMJjK9MQM",
+                "title": "Force",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/8sJMJjK9MQM"
-              },
-              {
-                "title": "Force 2",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/lFAaxDfl6EI"
               }
             ],
             "qa": {
               "type": "html",
-              "path": "data/Physics/Force/qa.html"
+              "path": "data/Physics/Chapter3/qa.html"
           }   
-          },  
+          },
           {
-            "name": "Chapter 4:Light ",
+            "name": "Chapter 4: Simple Machines",
+            "lessons": [
+              {
+                "title": "Simple Machines",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/22pUK-W1jKs"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Chapter4/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 5: Light",
              "lessons": [
               {
                 "title": "Light",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/a6UAGR94Nfs"
-              },
-              {
-                "title": "Reflection of Light",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/RsKsS5gQMoo"
               }
-            ]
-          }       ]
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Chapter5/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 6: Magnetism",
+            "lessons": [
+              {
+                "title": "Magnetism",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/16G8EJvAWlA"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Physics/Chapter6/qa.html"
+            }
+          }
+       ]
       }

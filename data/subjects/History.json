@@ -1,4 +1,4 @@
-{
+﻿{
         "name": "History",
         "chapters": [
           {
@@ -9,11 +9,11 @@
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
               }
-            ]   ,
+            ],
             "qa": {
               "type": "html",
               "path": "data/history/Egyptian/qa.html"
-          }   
+            }
           },
           {
             "name": "The Mesopotamian Civilization",
@@ -58,56 +58,116 @@
             }
           },
           {
-            "name": "Early Vedic period",
+            "name": "The Early Vedic Period",
             "lessons": [
               {
-                "title": "Early Vedic period",
+                "title": "The Early Vedic Period",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/b07U5c7FN6c"
+                "url": "https://www.youtube.com/embed/V0dHDgiO-8o"
               }
             ],
             "qa": {
               "type": "html",
-              "path": "data/history/Vedic/qa.html"
+              "path": "data/history/EarlyVedic/qa.html"
             }
           },
-            {
-            "name": "Rural Local Self- Government",
+          {
+            "name": "Later Vedic Period",
             "lessons": [
               {
-                "title": "Rural Local Self- Government",
+                "title": "Later Vedic Period",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/xlD6dYRnlFc"
+                "url": "https://www.youtube.com/embed/5U5KBHLwROM"
               }
-            ],  
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/LaterVedic/qa.html"
+            }
+          },
+          {
+            "name": "Buddhism and Jainism",
+            "lessons": [
+              {
+                "title": "Buddhism and Jainism",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/-qsOVIL6iXc"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/BuddhismJainism/qa.html"
+            }
+          },
+          {
+            "name": "The Rise of Magadha",
+            "lessons": [
+              {
+                "title": "The Rise of Magadha",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/p4XCgdYtUv8"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/Magadha/qa.html"
+            }
+          },
+          {
+            "name": "The Mauryan Empire and Administration",
+            "lessons": [
+              {
+                "title": "The Mauryan Empire and Administration",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/lA-Rb1yuTh8"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/MauryanEmpire/qa.html"
+            }
+          },
+          {
+            "name": "The Gupta Empire",
+            "lessons": [
+              {
+                "title": "The Gupta Empire",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/jYWPTKm7H7k"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/GuptaEmpire/qa.html"
+            }
+          },
+          {
+            "name": "Rural Local self Government",
+            "lessons": [
+              {
+                "title": "Rural Local self Government",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/2tTgejRBRCc"
+              }
+            ],
             "qa": {
               "type": "html",
               "path": "data/history/RuralLocalSelfGovernment/qa.html"
             }
           },
           {
-            "name": "Urban Local Self- Government",
+            "name": "Urban Local self Government",
             "lessons": [
               {
-                "title": "Urban Local Self- Government",
+                "title": "Urban Local self Government",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/3m9dRyIvduE"
               }
-            ],              
-              "qa": {
-                "type": "html",
-                "path": "data/history/UrbanLocalSelfGovernment/qa.html"
-              }
-            },
-            {
-              "name": "later vedic period",
-              "lessons": [
-                {
-                  "title": "later vedic period",
-                  "type": "youtube",
-                  "url": "https://www.youtube.com/embed/5U5KBHLwROM"
-                }
-              ]
-            }          
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/history/UrbanLocalSelfGovernment/qa.html"
+            }
+          }
         ]
       }

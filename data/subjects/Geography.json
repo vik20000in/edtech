@@ -2,12 +2,12 @@
         "name": "Geography",
         "chapters": [
           {
-            "name": "Chapter Maps",
+            "name": "Chapter 1: Mapping the Earth",
             "lessons": [
               {
-                "title": "Introduction to Maps",
+                "title": "Mapping the Earth",
                 "type": "youtube",
-                "url": "https://www.youtube.com/embed/ZaM6IB-a7co"
+                "url": "https://www.youtube.com/embed/hzOW27rT7H8"
               }
             ],
             "qa": {
@@ -16,10 +16,10 @@
           }         
           },  
           {
-            "name": "Chapter 2: landForms",
+            "name": "Chapter 2: Landforms of the Earth",
             "lessons": [
               {
-                "title": "landform",
+                "title": "Landforms of the Earth",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/WwkCjtO2gEc"
               }
@@ -56,11 +56,12 @@
               "type": "html",
               "path": "data/Geography/Chapter4/qa.html"
           }            
-          },{
-            "name": "Agriculture ",
+          },
+          {
+            "name": "Chapter 4: Agriculture",
             "lessons": [
               {
-                "title": "Agriculture - Introduction",
+                "title": "Agriculture",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/3xi6UiFw1t8"
               }
@@ -68,6 +69,39 @@
             "qa": {
               "type": "html",
               "path": "data/Geography/Agriculture/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 5: Minerals",
+            "lessons": [
+              {
+                "title": "Minerals",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/afmsReAeNuI"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter5/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 7: South America",
+            "lessons": [
+              {
+                "title": "South America— Location, Political Divisions and Physical Features",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/HzqRRhxEeYE"
+              },
+              {
+                "title": "Map of South America",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/BsS01rsRLZ0"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Geography/Chapter7/qa.html"
             }
           }
         ]

@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Mathematics",
   "chapters": [
     {
@@ -16,24 +16,10 @@
       }
     },
     {
-      "name": "Fundamentals for Algebra",
+      "name": "Chapter 2: Operations on Whole Numbers",
       "lessons": [
         {
-          "title": "Fundamentals for Algebra",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/nHVfIxiGYfc"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/FundamentalsForAlgebra/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 2: OPERATIONS ON WHOLE NUMBERS",
-      "lessons": [
-        {
-          "title": "OPERATIONS ON WHOLE NUMBERS",
+          "title": "Operations on Whole Numbers",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/39TVRTBgtUU"
         },
@@ -61,7 +47,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/QMyGydI67ZE"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter3/qa.html"
+      }
     },
     {
       "name": "Chapter 4: Fractions",
@@ -108,84 +98,244 @@
       }
     },
     {
-      "name": "Chapter 5: PLAYING WITH NUMBERS",
+      "name": "Chapter 5: Decimal Fractions",
+      "lessons": [
+        {
+          "title": "Decimal Fractions",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/bFlx3EAnPz4"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter5/qa.html"
+      }
+    },
+    {
+      "name": "Playing with Numbers",
       "lessons": [
         {
           "title": "Playing with Numbers - Introduction",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/Q_FKAmAsIQI"
-        }
-       ,{
+        },
+        {
           "title": "Playing with Numbers - Introduction 2",
-          "type": "youtube",    
-          "url": "https://www.youtube.com/embed/VG0e2RUaOOo"},
-          { 
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/VG0e2RUaOOo"
+        },
+        {
           "title": "Playing with Numbers - Introduction 3",
-          "type": "youtube",  
+          "type": "youtube",
           "url": "https://www.youtube.com/embed/X0iJdHVfvWc"
-          }
-          ,{
-           "title": "Playing with Numbers - Introduction 4",
-          "type": "youtube",  
-          "url": "https://www.youtube.com/embed/CmOESSCXt1U"},
-          {   
+        },
+        {
+          "title": "Playing with Numbers - Introduction 4",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/CmOESSCXt1U"
+        },
+        {
           "title": "Playing with Numbers - Introduction 5",
-          "type": "youtube",  
+          "type": "youtube",
           "url": "https://www.youtube.com/embed/JA36uWfIoAQ"
-          },
-          {
-          "title": "Playing with Numbers - Introduction 6", 
+        },
+        {
+          "title": "Playing with Numbers - Introduction 6",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/WNXln3VkcaQ"
-          },
-          {
+        },
+        {
           "title": "Playing with Numbers - Introduction 7",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/56ylvRu02TU"
-          }
-          ,
-          {
+        },
+        {
           "title": "Playing with Numbers - Introduction 8",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/gl-7qwI7O5A"
-          },
-          {
-          "title": "Playing with Numbers - Introduction 9",          
-          "type": "youtube",          
+        },
+        {
+          "title": "Playing with Numbers - Introduction 9",
+          "type": "youtube",
           "url": "https://www.youtube.com/embed/c3d-Xw-VVb0"
-          },
-          {
+        },
+        {
           "title": "Playing with Numbers - Introduction 10",
           "type": "youtube",
           "url": "https://www.youtube.com/embed/PlMsSqqqnpE"
-          }
-          
+        }
       ],
       "qa": {
         "type": "html",
         "path": "data/Mathematics/PlayingWithNumbers/qa.html"
       }
-    },{
-     
-      "name": "Ratio and Proportion ",
-      "lessons": [{
-        "title": "Ratio and Proportion ",
-        "type": "youtube",
-        "url": "https://www.youtube.com/embed/9TYt_AU5aDQ"}],
-      "qa": {}   
     },
     {
-      "name": "Curve| Polygon| Angle",
+      "name": "Chapter 7: Sets",
       "lessons": [
         {
-          "title": "Curve| Polygon| Angle",
+          "title": "Sets",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/FYTo54YBu_"
+          "url": "https://www.youtube.com/embed/YVASn6Gc_eA"
         }
       ],
       "qa": {
         "type": "html",
-        "path": "data/Mathematics/Algebra/qa.html"
+        "path": "data/Mathematics/Chapter7/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 8: Ratio and Proportion",
+      "lessons": [
+        {
+          "title": "Ratio and Proportion",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/9TYt_AU5aDQ"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter8/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 10: Percentage",
+      "lessons": [
+        {
+          "title": "Percentage",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/gqFfRBAJMUc"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter10/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 11: Speed, Time and Distance",
+      "lessons": [
+        {
+          "title": "Speed, Time and Distance",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/qT0w4yfjOqM"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter11/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 12: Fundamental Concepts of Algebra",
+      "lessons": [
+        {
+          "title": "Fundamental Concepts of Algebra",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/UDqELbiTIn4"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter12/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 13: Simple Equations",
+      "lessons": [
+        {
+          "title": "Simple Equations",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/UFQ_HmJjf_A"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter13/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 17: Quadrilaterals",
+      "lessons": [
+        {
+          "title": "Quadrilaterals",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/-YOsY53oUUU"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter17/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 19: Polygons",
+      "lessons": [
+        {
+          "title": "Polygons",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/HAhq3i5MxnA"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter19/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 20: Recognition of 3D Shapes (Solids)",
+      "lessons": [
+        {
+          "title": "Recognition of 3D Shapes (Solids)",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/xm3edvY0QlI"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter20/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 22: Geometrical Constructions",
+      "lessons": [
+        {
+          "title": "Geometrical Constructions",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/tiVet6gonm4"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter22/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 25: Graphical Representation of Data",
+      "lessons": [
+        {
+          "title": "Graphical Representation of Data",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/9M40B1uSfSI"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter25/qa.html"
+      }
+    },
+    {
+      "name": "Chapter 26: Mean and Median",
+      "lessons": [
+        {
+          "title": "Mean and Median",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/sS6t-2j11Xs"
+        }
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/Mathematics/Chapter26/qa.html"
       }
     }
   ]

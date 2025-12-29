@@ -14,23 +14,9 @@
               "type": "html",
               "path": "data/Chemistry/Chapter1/qa.html"
           }            
-          },  
+          },
           {
-            "name": "Chapter 2: Matter",
-            "lessons": [
-              {
-                "title": "Matter",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/CZlc0W0Pb14"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Matter/qa.html"
-          }            
-          },  
-          {
-            "name": "Chapter 3: Common Laboratory Apparatus",
+            "name": "Chapter 2: Common Laboratory Apparatus",
             "lessons": [
               {
                 "title": "Common Laboratory Apparatus",
@@ -40,28 +26,42 @@
             ],
             "qa": {
               "type": "html",
-              "path": "data/Chemistry/PhysicalQuantities/qa.html"
+              "path": "data/Chemistry/Chapter2/qa.html"
           }            
-          },  
+          },
           {
-            "name": "Chapter 4: Elements, Compounds, Symbol and Formulae",
+            "name": "Chapter 3: Matter",
             "lessons": [
               {
-                "title": "Elements, Compounds, Symbol and Formulae",
+                "title": "Matter",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/uOh1lLCzhcE"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Chapter3/qa.html"
+          }            
+          },
+          {
+            "name": "Chapter 4: Elements, Compounds, Symbol & Formulae",
+            "lessons": [
+              {
+                "title": "Elements, Compounds, Symbol & Formulae",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/jHHy4AXWunA"
               }
             ],
             "qa": {
               "type": "html",
-              "path": "data/Chemistry/Elements/qa.html"
+              "path": "data/Chemistry/Chapter4/qa.html"
           }            
           },
           { 
-            "name": "Chapter 5: Pure substances and Mixtures",
+            "name": "Chapter 5: Pure Substances and Mixtures; Separation of Mixtures",
             "lessons": [
               {
-                "title": "Pure substances and Mixtures",
+                "title": "Pure Substances and Mixtures; Separation of Mixtures",
                 "type": "youtube",
                 "url": "https://www.youtube.com/embed/nYAMBjiMF_0"
               } 
@@ -69,8 +69,36 @@
             ],
             "qa": {
               "type": "html",
-              "path": "data/Chemistry/Mixtures/qa.html"
+              "path": "data/Chemistry/Chapter5/qa.html"
           }            
+          },
+          {
+            "name": "Chapter 6: Air and Atmosphere",
+            "lessons": [
+              {
+                "title": "Air and Atmosphere",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/o9uTt_T1EIA"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Chapter6/qa.html"
+            }
+          },
+          {
+            "name": "Chapter 7: Water",
+            "lessons": [
+              {
+                "title": "Water",
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/bzHEMuyYNFc"
+              }
+            ],
+            "qa": {
+              "type": "html",
+              "path": "data/Chemistry/Chapter7/qa.html"
+            }
           }
         ]
       }
