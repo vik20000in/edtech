@@ -1,134 +1,45 @@
 {
-        "name": "Biology",
-        "chapters": [
-          {
-            "name": "Chapter 1: Leaf",
-            "lessons": [
-              {
-                "title": "Leaf",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/7hzbLqx_s2k"
-              },{
-                "title": "Type of Leaf",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/YCFXzZBLpDI"
-              },
-              {
-                "title": "Parts of Leaf with QandA",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/AQ2nsGgcDv4"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter1/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 2: The Flower",
-            "lessons": [
-              {
-                "title": "Flower",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/g1_4Llbw2uo"
-              },{
-                "title": "Parts of Flower with QandA",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/SitGpQiCoyI"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter2/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 3: Cell: The structure and functions",
-            "lessons": [
-              {
-                "title":  "Cell: The structure and functions",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/W2f0a3f4j4M"
-              },{
-                "title": "Cell: The structure and functions with QandA",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/j3YvDSXU3ng"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter3/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 4: Human Body: Digestive System",
-            "lessons": [
-              {
-                "title": "Digestive System",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/NstEazghNEA"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter4/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 5: Human Body: Respiratory System",
-            "lessons": [
-              {
-                "title": "Human Body: Respiratory System",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/qrE2VXFGqng"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter5/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 6: Human Body: Circulatory System",
-            "lessons": [
-              {
-                "title": "Human Body: Circulatory System",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/zJ0ku1j7M5I"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter6/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 7: Disease and Hygiene",
-            "lessons": [
-              {
-                "title": "Disease and Hygiene",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/MhuYHHe7xoY"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter7/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 8: Habitat and Adaptation",
-            "lessons": [
-              {
-                "title":  "Habitat and Adaptation",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/PN9oEYMmZ4w"
-              }
-            ],
-            "qa": {
-                "type": "html",
-                "path": "data/Biology/Chapter8/qa.html"
-            }
-          }
-        ]
-      }
+  "name": "Biology",
+  "chapters": [
+    {
+      "name": "Chapter 1: Tissue (Plant and Animal Tissue)",
+      "lessons": [
+        {
+          "title": "Class 7 Biology: Tissue (Plant and Animal Tissue)",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/OKobolwVRDQ"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: Kingdom Classification",
+      "lessons": [
+        {
+          "title": "Class 7 Biology: Kingdom Classification",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/nQf2p0nLS_Q"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3: Kingdom Animalia",
+      "lessons": [
+        {
+          "title": "Class 7 Biology: Kingdom Animalia",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/1gOf4jbvZbc"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Excretion in Humans",
+      "lessons": [
+        {
+          "title": "Class 7 Biology: Excretion in Humans",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/aHSMsgzR8ps"
+        }
+      ]
+    }
+  ]
+}

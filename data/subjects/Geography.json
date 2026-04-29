@@ -1,108 +1,65 @@
 {
-        "name": "Geography",
-        "chapters": [
-          {
-            "name": "Chapter 1: Mapping the Earth",
-            "lessons": [
-              {
-                "title": "Mapping the Earth",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/hzOW27rT7H8"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter1/qa.html"
-          }         
-          },  
-          {
-            "name": "Chapter 2: Landforms of the Earth",
-            "lessons": [
-              {
-                "title": "Landforms of the Earth",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/WwkCjtO2gEc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter2/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 3: Water Bodies of the Earth",
-            "lessons": [
-              {
-                "title": "Water Bodies of the Earth",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/bZDKvLfz4Oo"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter3/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 4: North America",
-            "lessons": [
-              {
-                "title": "North America",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/z6g8O0OxdQg"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter4/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 4: Agriculture",
-            "lessons": [
-              {
-                "title": "Agriculture",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/3xi6UiFw1t8"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Agriculture/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 5: Minerals",
-            "lessons": [
-              {
-                "title": "Minerals",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/afmsReAeNuI"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter5/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 7: South America",
-            "lessons": [
-              {
-                "title": "South America— Location, Political Divisions and Physical Features",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/HzqRRhxEeYE"
-              },
-              {
-                "title": "Map of South America",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/BsS01rsRLZ0"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Geography/Chapter7/qa.html"
-            }
-          }
-        ]
-      }
+  "name": "Geography",
+  "chapters": [
+    {
+      "name": "Chapter 1: Representation of Geographical Features",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: Representation of Geographical Features",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/-xpFJGQ-BZg"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: The Atmosphere",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: The Atmosphere",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/s1u5TCwfF5s"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3: Weather and Climate",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: Weather and Climate",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/vlD0OZP8GCU"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Weathering and Soil Formation",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: Weathering and Soil Formation",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/SwOnq-0d4vM"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 7: Europe",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: Europe",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/xdjT6W7CqSQ"
+        }
+      ]
+    },
+    {
+      "name": "Map of Europe",
+      "lessons": [
+        {
+          "title": "Class 7 Geography: Map of Europe",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/oJKAcJsJjOM"
+        }
+      ]
+    }
+  ]
+}

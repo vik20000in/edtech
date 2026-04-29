@@ -1,93 +1,65 @@
- {
-        "name": "Computers",
-        "chapters": [
-          {
-            "name": "Chapter 1: Introduction to Languages",
-            "lessons": [
-              {
-                "title": "Programming Languages Basics",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/oNv7sqR5ozg"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter1/qa.pdf"
-          },
-          {
-            "name": "Chapter 2: File Management: Organisation of Data",
-            "lessons": [
-              {
-                "title": "File Management: Organisation of Data",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/hpAmDZUSfiQ"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter2/qa.pdf"
-          },
-          { 
-            "name": "Chapter 3: MS word mail merge",
-            "lessons": [
-              {
-                "title": "MS word mail merge",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/0r1v2g3x8aE"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter3/qa.pdf"
-          },
-          {
-            "name": "Chapter 4: MS excel",
-            "lessons": [
-              {
-                "title": "MS excel",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/rXTfYBQ7yu0"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter4/qa.pdf"  
-          },
-          {
-            "name": "Chapter 5: Presentation: Visual Effects",
-            "lessons": [
-              {
-                "title": "Presentation: Visual Effects",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/RctIqnaXJGU"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter5/qa.pdf"
-          },
-          {
-            "name": "Chapter 6: Scratch Programming",
-            "lessons": [
-              {
-                "title": "Scratch Programming",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/VIpmkeqJhmQ"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter6/qa.pdf"
-          },
-          {
-            "name": "Chapter 7: HTML: An Introduction",
-            "lessons": [
-              {
-                "title": "HTML: An Introduction",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/IrRBJez98Lc"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter7/qa.pdf"
-          },
-          {
-            "name": "Chapter 9: Fundamentals of QBasic",
-            "lessons": [
-              {
-                "title": "Fundamentals of QBasic",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/BmrXj1d58LQ"
-              }
-            ],
-            "qa_pdf": "data/Computers/Chapter9/qa.pdf"
-          }
-        ]
-      }
+{
+  "name": "Computers",
+  "chapters": [
+    {
+      "name": "Chapter 1: Computer-Hardware Components - Components of a Computer System",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: Components of a Computer System",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/OdziYWEkDIM"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 1: Computer-Hardware Components - External Hardware",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: External Hardware",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/OoxS4FHe9Ew"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: Number System - An Introduction",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: Number System",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/MxjJqq3B6JU"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 8: Developing Skills in QBasic - Input and Conditional Statements",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: QBasic Input and Conditional Statements",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/uTlMe86TqDA"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5: Spreadsheet - Fundamentals of Spreadsheet",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: Spreadsheet Fundamentals",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/T3uHax1iBA0"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5: Spreadsheet - More on Spreadsheet",
+      "lessons": [
+        {
+          "title": "Class 7 Computer Studies: More on Spreadsheet",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/eBDRW_wtvso"
+        }
+      ]
+    }
+  ]
+}

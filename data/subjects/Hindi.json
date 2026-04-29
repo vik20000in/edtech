@@ -1,33 +1,115 @@
 {
-        "name": "Hindi",
-        "chapters": [
-          {
-            "name": "Chapter 1: Dhan Ki khoz",
-            "lessons": [
-              {
-                "title": "Dhan Ki khoz",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/An7CEzAG8fM"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Hindi/DhanKikhoz/qa.html"
-          }
-          },  
-          {
-            "name": "Chapter 2: Khilonewala",
-            "lessons": [
-              {
-                "title": "Khilonewala",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/cO0G6PIWGn4"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Hindi/Chidiya/qa.html"
-          }            
-          }
-        ]
-      }
+  "name": "Hindi",
+  "chapters": [
+    {
+      "name": "गद्य: छोटा जादूगर",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी: छोटा जादूगर",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/MpZNIEem1bg"
+        }
+      ]
+    },
+    {
+      "name": "गद्य: बूढ़ी काकी",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी: बूढ़ी काकी",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/iXIQTorshRk"
+        }
+      ]
+    },
+    {
+      "name": "गद्य: चंद्रशेखर आज़ाद",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी: चंद्रशेखर आज़ाद",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/RCFd60Hvj9w"
+        }
+      ]
+    },
+    {
+      "name": "पद्य: कर्मवीर",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी: कर्मवीर",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/VGFPM5xjkO8"
+        }
+      ]
+    },
+    {
+      "name": "पद्य: भारत देश",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी: भारत देश",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/UpDiG0HOqYA"
+        }
+      ]
+    },
+    {
+      "name": "व्याकरण: लिंग, वचन, क्रिया और कारक",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी व्याकरण: लिंग, वचन, क्रिया और कारक",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/WVH6a9h7YT0"
+        }
+      ]
+    },
+    {
+      "name": "व्याकरण: पर्यायवाची और विलोम शब्द",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी व्याकरण: पर्यायवाची और विलोम शब्द",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/L0hrkx5Xgl0"
+        }
+      ]
+    },
+    {
+      "name": "व्याकरण: अनेक शब्दों के लिए एक शब्द और अनेकार्थी शब्द",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी व्याकरण: एक शब्द और अनेकार्थी शब्द",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/l29eXDgO1kA"
+        }
+      ]
+    },
+    {
+      "name": "व्याकरण: समरूपी भिन्नार्थक शब्द और तत्सम-तद्भव",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी व्याकरण: समरूपी भिन्नार्थक शब्द और तत्सम-तद्भव",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/H1vnjFt-mMM"
+        }
+      ]
+    },
+    {
+      "name": "व्याकरण: मुहावरे और लोकोक्तियाँ",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी व्याकरण: मुहावरे और लोकोक्तियाँ",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/6B0ptFDaL3k"
+        }
+      ]
+    },
+    {
+      "name": "लेखन: अपठित गद्यांश, औपचारिक पत्र और प्रस्ताव लेखन",
+      "lessons": [
+        {
+          "title": "कक्षा 7 हिंदी लेखन: अपठित गद्यांश, औपचारिक पत्र और प्रस्ताव लेखन",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/gPuUv6aT6sY"
+        }
+      ]
+    }
+  ]
+}

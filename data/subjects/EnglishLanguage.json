@@ -1,19 +1,95 @@
 {
-        "name": "English Language",
-        "chapters": [
-          {
-            "name": " Types of Sentences ",
-            "lessons": [
-              {
-                "title": " Types of Sentences ",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/NDR4fAXKYvk"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/EnglishLanguage/Nouns/qa.html"
-            }
-          }
-        ]
-      }
+  "name": "English Language",
+  "chapters": [
+    {
+      "name": "Narrative Essay",
+      "lessons": [
+        {
+          "title": "Class 7 English Language: Narrative Essay",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/X4rwZ5N0NBM"
+        }
+      ]
+    },
+    {
+      "name": "Picture Composition",
+      "lessons": [
+        {
+          "title": "Class 7 English Language: Picture Composition",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/mPhHSz-rJ9A"
+        }
+      ]
+    },
+    {
+      "name": "Formal Letter",
+      "lessons": [
+        {
+          "title": "Class 7 English Language: Formal Letter",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/W3KI2rJm-Sc"
+        }
+      ]
+    },
+    {
+      "name": "Notice Writing",
+      "lessons": [
+        {
+          "title": "Class 7 English Language: Notice Writing",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/M3YXG3cAKJE"
+        }
+      ]
+    },
+    {
+      "name": "Unseen Comprehension",
+      "lessons": [
+        {
+          "title": "Class 7 English Language: Unseen Comprehension",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/eTYqKeavb0E"
+        }
+      ]
+    },
+    {
+      "name": "Adverbs and its Kinds",
+      "lessons": [
+        {
+          "title": "Class 7 English Grammar: Adverbs and Kinds",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/eyiNsMlEVRo"
+        }
+      ]
+    },
+    {
+      "name": "Agreement of the Verb with the Subject",
+      "lessons": [
+        {
+          "title": "Class 7 English Grammar: Subject Verb Agreement",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/zfbUzWqsH74"
+        }
+      ]
+    },
+    {
+      "name": "Tenses: Simple, Continuous, Perfect and Perfect Continuous",
+      "lessons": [
+        {
+          "title": "Class 7 English Grammar: Tenses",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/lR_VTbBUT20"
+        }
+      ]
+    },
+    {
+      "name": "Articles",
+      "lessons": [
+        {
+          "title": "Class 7 English Grammar: Articles",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/2hlnMQKPdE8"
+        }
+      ]
+    }
+  ]
+}

@@ -134,11 +134,13 @@ function renderChapterMenu(subjectName, chapterName) {
             menu.appendChild(button);
         });
 
-        const qaButton = document.createElement('button');
-        qaButton.className = 'menu-item';
-        qaButton.textContent = 'Q&A';
-        qaButton.onclick = () => selectQA(subjectName, chapterName);
-        menu.appendChild(qaButton);
+        if (chapter.qa || chapter.qa_pdf) {
+            const qaButton = document.createElement('button');
+            qaButton.className = 'menu-item';
+            qaButton.textContent = 'Q&A';
+            qaButton.onclick = () => selectQA(subjectName, chapterName);
+            menu.appendChild(qaButton);
+        }
         const firstItem = menu.querySelector('.menu-item');
         if (firstItem) firstItem.focus();
     });

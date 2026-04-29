@@ -1,173 +1,75 @@
-﻿{
-        "name": "History",
-        "chapters": [
-          {
-            "name": "Egyptian History",
-            "lessons": [
-              {
-                "title": "Egyptian History video",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/8DOpD5Wa2Xc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/Egyptian/qa.html"
-            }
-          },
-          {
-            "name": "The Mesopotamian Civilization",
-            "lessons": [
-              {
-                "title": "Introduction to Mesopotamia",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/7glMyuMY84w"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/MesopotamianCivilization/qa.html"
-            }
-          },
-          {
-            "name": "The Indus Valley Civilization",
-            "lessons": [
-              {
-                "title": "Indus Valley Civilization",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/gnL5IfaYUqA"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/IndusValleyCivilization/qa.html"
-            }
-          },
-          {
-            "name": "China",
-            "lessons": [
-              {
-                "title": "Ancient China",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/Icq_ZswSiTw"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/AncientChina/qa.html"
-            }
-          },
-          {
-            "name": "The Early Vedic Period",
-            "lessons": [
-              {
-                "title": "The Early Vedic Period",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/V0dHDgiO-8o"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/EarlyVedic/qa.html"
-            }
-          },
-          {
-            "name": "Later Vedic Period",
-            "lessons": [
-              {
-                "title": "Later Vedic Period",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/5U5KBHLwROM"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/LaterVedic/qa.html"
-            }
-          },
-          {
-            "name": "Buddhism and Jainism",
-            "lessons": [
-              {
-                "title": "Buddhism and Jainism",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/-qsOVIL6iXc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/BuddhismJainism/qa.html"
-            }
-          },
-          {
-            "name": "The Rise of Magadha",
-            "lessons": [
-              {
-                "title": "The Rise of Magadha",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/p4XCgdYtUv8"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/Magadha/qa.html"
-            }
-          },
-          {
-            "name": "The Mauryan Empire and Administration",
-            "lessons": [
-              {
-                "title": "The Mauryan Empire and Administration",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/lA-Rb1yuTh8"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/MauryanEmpire/qa.html"
-            }
-          },
-          {
-            "name": "The Gupta Empire",
-            "lessons": [
-              {
-                "title": "The Gupta Empire",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/jYWPTKm7H7k"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/GuptaEmpire/qa.html"
-            }
-          },
-          {
-            "name": "Rural Local self Government",
-            "lessons": [
-              {
-                "title": "Rural Local self Government",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/2tTgejRBRCc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/RuralLocalSelfGovernment/qa.html"
-            }
-          },
-          {
-            "name": "Urban Local self Government",
-            "lessons": [
-              {
-                "title": "Urban Local self Government",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/3m9dRyIvduE"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/history/UrbanLocalSelfGovernment/qa.html"
-            }
-          }
-        ]
-      }
+{
+  "name": "History",
+  "chapters": [
+    {
+      "name": "The Constitution and the Preamble",
+      "lessons": [
+        {
+          "title": "Class 7 History and Civics: The Constitution and the Preamble",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/n2e4A13eDfc"
+        }
+      ]
+    },
+    {
+      "name": "Directive Principles of State Policy",
+      "lessons": [
+        {
+          "title": "Class 7 Civics: Directive Principles of State Policy",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/9vT7zl9sWQU"
+        }
+      ]
+    },
+    {
+      "name": "Rise and Spread of Christianity",
+      "lessons": [
+        {
+          "title": "Class 7 History: Rise and Spread of Christianity",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/5GG4vc9fQiE"
+        }
+      ]
+    },
+    {
+      "name": "Birth of Prophet Muhammad and Spread of Islam",
+      "lessons": [
+        {
+          "title": "Class 7 History: Birth of Prophet Muhammad and Spread of Islam",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/XvlU8qo5rcw"
+        }
+      ]
+    },
+    {
+      "name": "The Turkish Invasion and the Establishment of Delhi Sultanate",
+      "lessons": [
+        {
+          "title": "Class 7 History: Turkish Invasion and Establishment of Delhi Sultanate",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Tkf38VRRqwA"
+        }
+      ]
+    },
+    {
+      "name": "The Khilji and the Tughlaq Dynasties",
+      "lessons": [
+        {
+          "title": "Class 7 History: Khilji and Tughlaq Dynasties",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/4kx0hKeSt-4"
+        }
+      ]
+    },
+    {
+      "name": "Life Under the Delhi Sultanate",
+      "lessons": [
+        {
+          "title": "Class 7 History: Life Under the Delhi Sultanate",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/bcXLze3QjoY"
+        }
+      ]
+    }
+  ]
+}

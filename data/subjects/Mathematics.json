@@ -1,342 +1,135 @@
-﻿{
+{
   "name": "Mathematics",
   "chapters": [
     {
-      "name": "Chapter 1: Numbers",
+      "name": "Chapter 1: Integers",
       "lessons": [
         {
-          "title": "Introduction to Numbers",
+          "title": "Class 7 Mathematics: Integers",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/AF31lWJJSgg"
+          "url": "https://www.youtube.com/embed/mxYoUDEgOXA"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter1/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 2: Operations on Whole Numbers",
+      "name": "Chapter 2: Fractions",
       "lessons": [
         {
-          "title": "Operations on Whole Numbers",
+          "title": "Class 7 Mathematics: Fractions",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/39TVRTBgtUU"
-        },
-        {
-          "title": "Addition of Whole Numbers",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/7mykulrctdo"
+          "url": "https://www.youtube.com/embed/xknRPaetoFk"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter2/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 3: Integers",
+      "name": "Chapter 5: Exponents",
       "lessons": [
         {
-          "title": "Integers",
+          "title": "Class 7 Mathematics: Exponents",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/Q5wL0h2FpPA"
-        },
-        {
-          "title": "Integers 2",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/QMyGydI67ZE"
+          "url": "https://www.youtube.com/embed/d2JbM1ySxnA"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter3/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 4: Fractions",
+      "name": "Chapter 7: Ratio and Proportion",
       "lessons": [
         {
-          "title": "Fractions",
+          "title": "Class 7 Mathematics: Ratio and Proportion",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/8U352KTw9og"
-        },
-        {
-          "title": "Fractions 2",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/0Ms0K55rSS0"
-        },
-        {
-          "title": "Fractions 3",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/jebYNIttpnA"
-        },
-        {
-          "title": "Fractions 4",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
-        },
-        {
-          "title": "Fractions 5",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/kCJlAuFsg"
-        },
-        {
-          "title": "Fractions 6",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/OBx8YMBjTTI"
-        },
-        {
-          "title": "Fractions 7",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/Qgyi1VLsYyk"
+          "url": "https://www.youtube.com/embed/nfuav8pco4w"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter4/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 5: Decimal Fractions",
+      "name": "Chapter 8: Unitary Method",
       "lessons": [
         {
-          "title": "Decimal Fractions",
+          "title": "Class 7 Mathematics: Unitary Method",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/bFlx3EAnPz4"
+          "url": "https://www.youtube.com/embed/UKz7l3Ll8mg"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter5/qa.html"
-      }
+      ]
     },
     {
-      "name": "Playing with Numbers",
+      "name": "Chapter 9: Percentage",
       "lessons": [
         {
-          "title": "Playing with Numbers - Introduction",
+          "title": "Class 7 Mathematics: Percentage",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/Q_FKAmAsIQI"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 2",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/VG0e2RUaOOo"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 3",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/X0iJdHVfvWc"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 4",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/CmOESSCXt1U"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 5",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/JA36uWfIoAQ"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 6",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/WNXln3VkcaQ"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 7",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/56ylvRu02TU"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 8",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/gl-7qwI7O5A"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 9",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/c3d-Xw-VVb0"
-        },
-        {
-          "title": "Playing with Numbers - Introduction 10",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/PlMsSqqqnpE"
+          "url": "https://www.youtube.com/embed/JeVSmq1Nrpw"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/PlayingWithNumbers/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 7: Sets",
+      "name": "Chapter 13: Algebraic Expressions",
       "lessons": [
         {
-          "title": "Sets",
+          "title": "Class 7 Mathematics: Algebraic Expressions",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/YVASn6Gc_eA"
+          "url": "https://www.youtube.com/embed/6kQQBrqeUiI"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter7/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 8: Ratio and Proportion",
+      "name": "Chapter 14: Linear Equations",
       "lessons": [
         {
-          "title": "Ratio and Proportion",
+          "title": "Class 7 Mathematics: Linear Equations",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/9TYt_AU5aDQ"
+          "url": "https://www.youtube.com/embed/drQmn7MpG1Q"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter8/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 10: Percentage",
+      "name": "Chapter 16: Fundamental Geometrical Concepts",
       "lessons": [
         {
-          "title": "Percentage",
+          "title": "Class 7 Mathematics: Fundamental Geometrical Concepts",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/gqFfRBAJMUc"
+          "url": "https://www.youtube.com/embed/x43WEgTA88k"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter10/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 11: Speed, Time and Distance",
+      "name": "Chapter 17: Lines and Angles",
       "lessons": [
         {
-          "title": "Speed, Time and Distance",
+          "title": "Class 7 Mathematics: Lines and Angles",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/qT0w4yfjOqM"
+          "url": "https://www.youtube.com/embed/pNYUzZRJJgU"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter11/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 12: Fundamental Concepts of Algebra",
+      "name": "Chapter 20: Representing 3-D in 2-D",
       "lessons": [
         {
-          "title": "Fundamental Concepts of Algebra",
+          "title": "Class 7 Mathematics: Representing 3-D in 2-D",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/UDqELbiTIn4"
+          "url": "https://www.youtube.com/embed/qACNj32LTk8"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter12/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 13: Simple Equations",
+      "name": "Chapter 23: Mensuration (Exercises A, C, D)",
       "lessons": [
         {
-          "title": "Simple Equations",
+          "title": "Class 7 Mathematics: Mensuration",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/UFQ_HmJjf_A"
+          "url": "https://www.youtube.com/embed/MZAU-8NBhU0"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter13/qa.html"
-      }
+      ]
     },
     {
-      "name": "Chapter 17: Quadrilaterals",
+      "name": "Chapter 25: Probability",
       "lessons": [
         {
-          "title": "Quadrilaterals",
+          "title": "Class 7 Mathematics: Probability",
           "type": "youtube",
-          "url": "https://www.youtube.com/embed/-YOsY53oUUU"
+          "url": "https://www.youtube.com/embed/Ady9ApcQjzE"
         }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter17/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 19: Polygons",
-      "lessons": [
-        {
-          "title": "Polygons",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/HAhq3i5MxnA"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter19/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 20: Recognition of 3D Shapes (Solids)",
-      "lessons": [
-        {
-          "title": "Recognition of 3D Shapes (Solids)",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/xm3edvY0QlI"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter20/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 22: Geometrical Constructions",
-      "lessons": [
-        {
-          "title": "Geometrical Constructions",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/tiVet6gonm4"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter22/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 25: Graphical Representation of Data",
-      "lessons": [
-        {
-          "title": "Graphical Representation of Data",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/9M40B1uSfSI"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter25/qa.html"
-      }
-    },
-    {
-      "name": "Chapter 26: Mean and Median",
-      "lessons": [
-        {
-          "title": "Mean and Median",
-          "type": "youtube",
-          "url": "https://www.youtube.com/embed/sS6t-2j11Xs"
-        }
-      ],
-      "qa": {
-        "type": "html",
-        "path": "data/Mathematics/Chapter26/qa.html"
-      }
+      ]
     }
   ]
 }

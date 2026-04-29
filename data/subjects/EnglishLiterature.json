@@ -1,33 +1,55 @@
- {
-        "name": "English Literature",
-        "chapters": [
-          {
-            "name": "The Nightingale & the glow worm",
-            "lessons": [
-              {
-                "title": "The Nightingale & the glow worm",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/5k-n0_gpwLQ"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/English/TheHappyPrince/qa.html"
-            }
-          },
-          {
-            "name": "Idgah",
-            "lessons": [
-              {
-                "title": "Idgah",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/sYbosNuSaT8"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/English/TheHappyPrince/qa.html"
-            }
-          }
-        ]
-      }
+{
+  "name": "English Literature",
+  "chapters": [
+    {
+      "name": "Prose: Monday Morning",
+      "lessons": [
+        {
+          "title": "Class 7 English Literature: Monday Morning",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/BtdCQGVLcmE"
+        }
+      ]
+    },
+    {
+      "name": "Prose: A Retrieved Reformation",
+      "lessons": [
+        {
+          "title": "Class 7 English Literature: A Retrieved Reformation",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/99IPgEHuYLU"
+        }
+      ]
+    },
+    {
+      "name": "Poem: The Brook",
+      "lessons": [
+        {
+          "title": "Class 7 English Literature: The Brook",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/AVRBJQz0lBk"
+        }
+      ]
+    },
+    {
+      "name": "Poem: The Frog and the Nightingale",
+      "lessons": [
+        {
+          "title": "Class 7 English Literature: The Frog and the Nightingale",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/UQzHZ0h_ojw"
+        }
+      ]
+    },
+    {
+      "name": "Classic Short Story: The Boscombe Valley Mystery",
+      "lessons": [
+        {
+          "title": "Class 7 English Literature: The Boscombe Valley Mystery",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/bcTgrYKA8cU"
+        }
+      ]
+    }
+  ]
+}

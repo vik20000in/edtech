@@ -1,104 +1,45 @@
- {
-        "name": "Chemistry",
-        "chapters": [
-          {
-            "name": "Chapter 1: Introduction to chemistry",
-            "lessons": [
-              {
-                "title": "Introduction to chemistry",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/w_jhb7XOZkk?t=103"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter1/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 2: Common Laboratory Apparatus",
-            "lessons": [
-              {
-                "title": "Common Laboratory Apparatus",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/ORFmr9xgCAc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter2/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 3: Matter",
-            "lessons": [
-              {
-                "title": "Matter",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/uOh1lLCzhcE"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter3/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 4: Elements, Compounds, Symbol & Formulae",
-            "lessons": [
-              {
-                "title": "Elements, Compounds, Symbol & Formulae",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/jHHy4AXWunA"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter4/qa.html"
-          }            
-          },
-          { 
-            "name": "Chapter 5: Pure Substances and Mixtures; Separation of Mixtures",
-            "lessons": [
-              {
-                "title": "Pure Substances and Mixtures; Separation of Mixtures",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/nYAMBjiMF_0"
-              } 
-
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter5/qa.html"
-          }            
-          },
-          {
-            "name": "Chapter 6: Air and Atmosphere",
-            "lessons": [
-              {
-                "title": "Air and Atmosphere",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/o9uTt_T1EIA"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter6/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 7: Water",
-            "lessons": [
-              {
-                "title": "Water",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/bzHEMuyYNFc"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Chemistry/Chapter7/qa.html"
-            }
-          }
-        ]
-      }
+{
+  "name": "Chemistry",
+  "chapters": [
+    {
+      "name": "Chapter 1: Matter and Its Composition",
+      "lessons": [
+        {
+          "title": "Class 7 Chemistry: Matter and Its Composition",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/u6oVcAF4gGk"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: Physical and Chemical Changes",
+      "lessons": [
+        {
+          "title": "Class 7 Chemistry: Physical and Chemical Changes",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/tCSgVnCKXTI"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Atomic Structure",
+      "lessons": [
+        {
+          "title": "Class 7 Chemistry: Atomic Structure",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/64wZAwevcDI"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5: Language of Chemistry",
+      "lessons": [
+        {
+          "title": "Class 7 Chemistry: Language of Chemistry",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/tIqWuS-P3V0"
+        }
+      ]
+    }
+  ]
+}

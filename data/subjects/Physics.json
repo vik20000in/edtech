@@ -1,89 +1,45 @@
- {
-        "name": "Physics",
-        "chapters": [
-          {
-            "name": "Chapter 1: Matter",
-            "lessons": [
-              {
-                "title": "Matter",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/WFOApNmVwm0"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter1/qa.html"
-          }   
-          },
-          {
-            "name": "Chapter 2: Physical Quantities and Measurements",
-            "lessons": [
-              {
-                "title": "Physical Quantities and Measurements",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/5lZ_r4C4Pho"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter2/qa.html"
-          }   
-          },  
-          {
-            "name": "Chapter 3: Force",
-            "lessons": [
-              {
-                "title": "Force",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/8sJMJjK9MQM"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter3/qa.html"
-          }   
-          },
-          {
-            "name": "Chapter 4: Simple Machines",
-            "lessons": [
-              {
-                "title": "Simple Machines",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/22pUK-W1jKs"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter4/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 5: Light",
-             "lessons": [
-              {
-                "title": "Light",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/a6UAGR94Nfs"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter5/qa.html"
-            }
-          },
-          {
-            "name": "Chapter 6: Magnetism",
-            "lessons": [
-              {
-                "title": "Magnetism",
-                "type": "youtube",
-                "url": "https://www.youtube.com/embed/16G8EJvAWlA"
-              }
-            ],
-            "qa": {
-              "type": "html",
-              "path": "data/Physics/Chapter6/qa.html"
-            }
-          }
-       ]
-      }
+{
+  "name": "Physics",
+  "chapters": [
+    {
+      "name": "Chapter 1: Physical Quantities and Measurement",
+      "lessons": [
+        {
+          "title": "Class 7 Physics: Physical Quantities and Measurement",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/biYJPEjwjmQ"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2: Motion",
+      "lessons": [
+        {
+          "title": "Class 7 Physics: Motion",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/__f8Pr4R-mE"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3: Energy",
+      "lessons": [
+        {
+          "title": "Class 7 Physics: Energy",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/Q0LBegPWzrg"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4: Light",
+      "lessons": [
+        {
+          "title": "Class 7 Physics: Light",
+          "type": "youtube",
+          "url": "https://www.youtube.com/embed/d7yTlp4gBTI"
+        }
+      ]
+    }
+  ]
+}
