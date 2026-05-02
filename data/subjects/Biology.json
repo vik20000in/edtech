@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/OKobolwVRDQ"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/biology/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: Kingdom Classification",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/nQf2p0nLS_Q"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/biology/02-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 3: Kingdom Animalia",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/1gOf4jbvZbc"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/biology/03-chapter-3/qa.html"
+      }
     },
     {
       "name": "Chapter 4: Excretion in Humans",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/aHSMsgzR8ps"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/biology/04-chapter-4/qa.html"
+      }
     }
   ]
 }

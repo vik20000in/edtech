@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/MpZNIEem1bg"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/01-chapter/qa.html"
+      }
     },
     {
       "name": "गद्य: बूढ़ी काकी",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/iXIQTorshRk"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/02-chapter/qa.html"
+      }
     },
     {
       "name": "गद्य: चंद्रशेखर आज़ाद",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/RCFd60Hvj9w"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/03-chapter/qa.html"
+      }
     },
     {
       "name": "पद्य: कर्मवीर",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/VGFPM5xjkO8"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/04-chapter/qa.html"
+      }
     },
     {
       "name": "पद्य: भारत देश",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/UpDiG0HOqYA"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/05-chapter/qa.html"
+      }
     },
     {
       "name": "व्याकरण: लिंग, वचन, क्रिया और कारक",
@@ -59,7 +79,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/WVH6a9h7YT0"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/06-chapter/qa.html"
+      }
     },
     {
       "name": "व्याकरण: पर्यायवाची और विलोम शब्द",
@@ -69,7 +93,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/L0hrkx5Xgl0"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/07-chapter/qa.html"
+      }
     },
     {
       "name": "व्याकरण: अनेक शब्दों के लिए एक शब्द और अनेकार्थी शब्द",
@@ -79,7 +107,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/l29eXDgO1kA"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/08-chapter/qa.html"
+      }
     },
     {
       "name": "व्याकरण: समरूपी भिन्नार्थक शब्द और तत्सम-तद्भव",
@@ -89,7 +121,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/H1vnjFt-mMM"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/09-chapter/qa.html"
+      }
     },
     {
       "name": "व्याकरण: मुहावरे और लोकोक्तियाँ",
@@ -99,7 +135,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/6B0ptFDaL3k"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/10-chapter/qa.html"
+      }
     },
     {
       "name": "लेखन: अपठित गद्यांश, औपचारिक पत्र और प्रस्ताव लेखन",
@@ -109,7 +149,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/gPuUv6aT6sY"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/hindi/11-chapter/qa.html"
+      }
     }
   ]
 }

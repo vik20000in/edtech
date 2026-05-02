@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/OdziYWEkDIM"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 1: Computer-Hardware Components - External Hardware",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/OoxS4FHe9Ew"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/02-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: Number System - An Introduction",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/MxjJqq3B6JU"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/03-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 8: Developing Skills in QBasic - Input and Conditional Statements",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/uTlMe86TqDA"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/04-chapter-8/qa.html"
+      }
     },
     {
       "name": "Chapter 5: Spreadsheet - Fundamentals of Spreadsheet",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/T3uHax1iBA0"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/05-chapter-5/qa.html"
+      }
     },
     {
       "name": "Chapter 5: Spreadsheet - More on Spreadsheet",
@@ -59,7 +79,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/eBDRW_wtvso"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/computers/06-chapter-5/qa.html"
+      }
     }
   ]
 }

@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/u6oVcAF4gGk"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/chemistry/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: Physical and Chemical Changes",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/tCSgVnCKXTI"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/chemistry/02-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 4: Atomic Structure",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/64wZAwevcDI"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/chemistry/03-chapter-4/qa.html"
+      }
     },
     {
       "name": "Chapter 5: Language of Chemistry",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/tIqWuS-P3V0"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/chemistry/04-chapter-5/qa.html"
+      }
     }
   ]
 }

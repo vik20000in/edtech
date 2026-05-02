@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/-xpFJGQ-BZg"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: The Atmosphere",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/s1u5TCwfF5s"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/02-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 3: Weather and Climate",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/vlD0OZP8GCU"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/03-chapter-3/qa.html"
+      }
     },
     {
       "name": "Chapter 4: Weathering and Soil Formation",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/SwOnq-0d4vM"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/04-chapter-4/qa.html"
+      }
     },
     {
       "name": "Chapter 7: Europe",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/xdjT6W7CqSQ"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/05-chapter-7/qa.html"
+      }
     },
     {
       "name": "Map of Europe",
@@ -59,7 +79,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/oJKAcJsJjOM"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/geography/06-map-of-europe/qa.html"
+      }
     }
   ]
 }

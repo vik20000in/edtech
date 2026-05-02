@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/biYJPEjwjmQ"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/physics/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: Motion",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/__f8Pr4R-mE"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/physics/02-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 3: Energy",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/Q0LBegPWzrg"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/physics/03-chapter-3/qa.html"
+      }
     },
     {
       "name": "Chapter 4: Light",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/d7yTlp4gBTI"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/physics/04-chapter-4/qa.html"
+      }
     }
   ]
 }

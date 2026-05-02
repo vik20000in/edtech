@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/mxYoUDEgOXA"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/01-chapter-1/qa.html"
+      }
     },
     {
       "name": "Chapter 2: Fractions",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/xknRPaetoFk"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/02-chapter-2/qa.html"
+      }
     },
     {
       "name": "Chapter 5: Exponents",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/d2JbM1ySxnA"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/03-chapter-5/qa.html"
+      }
     },
     {
       "name": "Chapter 7: Ratio and Proportion",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/nfuav8pco4w"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/04-chapter-7/qa.html"
+      }
     },
     {
       "name": "Chapter 8: Unitary Method",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/UKz7l3Ll8mg"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/05-chapter-8/qa.html"
+      }
     },
     {
       "name": "Chapter 9: Percentage",
@@ -59,7 +79,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/JeVSmq1Nrpw"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/06-chapter-9/qa.html"
+      }
     },
     {
       "name": "Chapter 13: Algebraic Expressions",
@@ -69,7 +93,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/6kQQBrqeUiI"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/07-chapter-13/qa.html"
+      }
     },
     {
       "name": "Chapter 14: Linear Equations",
@@ -79,7 +107,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/drQmn7MpG1Q"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/08-chapter-14/qa.html"
+      }
     },
     {
       "name": "Chapter 16: Fundamental Geometrical Concepts",
@@ -89,7 +121,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/x43WEgTA88k"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/09-chapter-16/qa.html"
+      }
     },
     {
       "name": "Chapter 17: Lines and Angles",
@@ -99,7 +135,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/pNYUzZRJJgU"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/10-chapter-17/qa.html"
+      }
     },
     {
       "name": "Chapter 20: Representing 3-D in 2-D",
@@ -109,7 +149,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/qACNj32LTk8"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/11-chapter-20/qa.html"
+      }
     },
     {
       "name": "Chapter 23: Mensuration (Exercises A, C, D)",
@@ -119,7 +163,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/MZAU-8NBhU0"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/12-chapter-23/qa.html"
+      }
     },
     {
       "name": "Chapter 25: Probability",
@@ -129,7 +177,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/Ady9ApcQjzE"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/mathematics/13-chapter-25/qa.html"
+      }
     }
   ]
 }

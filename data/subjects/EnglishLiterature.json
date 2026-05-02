@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/BtdCQGVLcmE"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-literature/01-prose-monday-morning/qa.html"
+      }
     },
     {
       "name": "Prose: A Retrieved Reformation",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/99IPgEHuYLU"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-literature/02-prose-a-retrieved-reformation/qa.html"
+      }
     },
     {
       "name": "Poem: The Brook",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/AVRBJQz0lBk"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-literature/03-poem-the-brook/qa.html"
+      }
     },
     {
       "name": "Poem: The Frog and the Nightingale",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/UQzHZ0h_ojw"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-literature/04-poem-the-frog-and-the-nightingale/qa.html"
+      }
     },
     {
       "name": "Classic Short Story: The Boscombe Valley Mystery",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/bcTgrYKA8cU"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-literature/05-classic-short-story-the-boscombe-valley-mystery/qa.html"
+      }
     }
   ]
 }

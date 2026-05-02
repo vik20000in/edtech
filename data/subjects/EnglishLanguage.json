@@ -9,7 +9,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/X4rwZ5N0NBM"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/01-narrative-essay/qa.html"
+      }
     },
     {
       "name": "Picture Composition",
@@ -19,7 +23,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/mPhHSz-rJ9A"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/02-picture-composition/qa.html"
+      }
     },
     {
       "name": "Formal Letter",
@@ -29,7 +37,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/W3KI2rJm-Sc"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/03-formal-letter/qa.html"
+      }
     },
     {
       "name": "Notice Writing",
@@ -39,7 +51,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/M3YXG3cAKJE"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/04-notice-writing/qa.html"
+      }
     },
     {
       "name": "Unseen Comprehension",
@@ -49,7 +65,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/eTYqKeavb0E"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/05-unseen-comprehension/qa.html"
+      }
     },
     {
       "name": "Adverbs and its Kinds",
@@ -59,7 +79,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/eyiNsMlEVRo"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/06-adverbs-and-its-kinds/qa.html"
+      }
     },
     {
       "name": "Agreement of the Verb with the Subject",
@@ -69,7 +93,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/zfbUzWqsH74"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/07-agreement-of-the-verb-with-the-subject/qa.html"
+      }
     },
     {
       "name": "Tenses: Simple, Continuous, Perfect and Perfect Continuous",
@@ -79,7 +107,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/lR_VTbBUT20"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/08-tenses-simple-continuous-perfect-and-perfect-continuous/qa.html"
+      }
     },
     {
       "name": "Articles",
@@ -89,7 +121,11 @@
           "type": "youtube",
           "url": "https://www.youtube.com/embed/2hlnMQKPdE8"
         }
-      ]
+      ],
+      "qa": {
+        "type": "html",
+        "path": "data/GeneratedQA/english-language/09-articles/qa.html"
+      }
     }
   ]
 }
