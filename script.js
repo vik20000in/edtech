@@ -2,6 +2,7 @@ let data;
 let subjectsData = {}; // Cache for loaded subject files
 let history = [{ type: 'main_menu' }];
 let autoSpeakEnabled = false;
+let appVideoFullscreenEnabled = false;
 
 function loadData() {
     fetch('data.json')
@@ -51,6 +52,7 @@ function render() {
     const fullscreenButton = document.getElementById('fullscreen-video-button');
     const currentState = history[history.length - 1];
 
+    exitAppVideoFullscreen();
     content.innerHTML = ''; // Clear previous content
     fullscreenButton.classList.toggle('visible', currentState.type === 'video');
 
@@ -181,6 +183,7 @@ function renderVideo(subjectName, chapterName, lessonTitle) {
                     <h2>${lessonTitle}</h2>
                     <p class="video-help">Use the top-right Full Screen button, or scroll down to use YouTube's own full screen option.</p>
                     <div class="video-container" id="active-video-container">
+                        <button id="exit-video-fullscreen" class="exit-video-fullscreen" type="button">Exit Full Screen</button>
                         <iframe
                             id="active-video-frame"
                             src="${formatYouTubeUrl(lesson.url)}"
@@ -199,20 +202,35 @@ function renderVideo(subjectName, chapterName, lessonTitle) {
                 <section class="video-page">
                     <h2>${lessonTitle}</h2>
                     <div class="video-container" id="active-video-container">
+                        <button id="exit-video-fullscreen" class="exit-video-fullscreen" type="button">Exit Full Screen</button>
                         <video id="active-video-frame" controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video>
                     </div>
                 </section>
             `;
         }
+
+        const exitButton = document.getElementById('exit-video-fullscreen');
+        if (exitButton) {
+            exitButton.addEventListener('click', exitAppVideoFullscreen);
+        }
     });
 }
 
 function openVideoFullscreen() {
-    const videoFrame = document.getElementById('active-video-frame');
     const videoContainer = document.getElementById('active-video-container');
-    const target = videoFrame || videoContainer;
+    const target = videoContainer;
 
     if (!target) return;
+
+    if (isNativeFullscreenActive()) {
+        exitNativeFullscreen();
+        return;
+    }
+
+    if (appVideoFullscreenEnabled) {
+        exitAppVideoFullscreen();
+        return;
+    }
 
     const requestFullscreen = target.requestFullscreen ||
         target.webkitRequestFullscreen ||
@@ -220,14 +238,71 @@ function openVideoFullscreen() {
         target.msRequestFullscreen;
 
     if (requestFullscreen) {
-        const fullscreenResult = requestFullscreen.call(target);
-        if (fullscreenResult && typeof fullscreenResult.catch === 'function') {
-            fullscreenResult.catch(() => {
-                videoContainer?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            });
+        try {
+            const fullscreenResult = requestFullscreen.call(target);
+            if (fullscreenResult && typeof fullscreenResult.catch === 'function') {
+                fullscreenResult.catch(enterAppVideoFullscreen);
+            }
+            setTimeout(function () {
+                if (!isNativeFullscreenActive()) {
+                    enterAppVideoFullscreen();
+                }
+            }, 600);
+        } catch (error) {
+            enterAppVideoFullscreen();
         }
     } else {
-        videoContainer?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        enterAppVideoFullscreen();
+    }
+}
+
+function enterAppVideoFullscreen() {
+    const videoContainer = document.getElementById('active-video-container');
+    const fullscreenButton = document.getElementById('fullscreen-video-button');
+    const exitButton = document.getElementById('exit-video-fullscreen');
+
+    if (!videoContainer) return;
+
+    appVideoFullscreenEnabled = true;
+    document.body.classList.add('video-fullscreen-mode');
+    videoContainer.classList.add('fullscreen-fallback');
+    if (fullscreenButton) fullscreenButton.textContent = 'Exit Full Screen';
+    if (exitButton) exitButton.focus();
+    videoContainer.scrollIntoView(false);
+}
+
+function exitAppVideoFullscreen() {
+    const videoContainer = document.getElementById('active-video-container');
+    const fullscreenButton = document.getElementById('fullscreen-video-button');
+
+    appVideoFullscreenEnabled = false;
+    document.body.classList.remove('video-fullscreen-mode');
+    if (videoContainer) videoContainer.classList.remove('fullscreen-fallback');
+    if (fullscreenButton) fullscreenButton.textContent = 'Full Screen';
+}
+
+function isNativeFullscreenActive() {
+    return document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.mozFullScreenElement ||
+        document.msFullscreenElement;
+}
+
+function exitNativeFullscreen() {
+    const exitFullscreen = document.exitFullscreen ||
+        document.webkitExitFullscreen ||
+        document.mozCancelFullScreen ||
+        document.msExitFullscreen;
+
+    if (exitFullscreen) {
+        exitFullscreen.call(document);
+    }
+}
+
+function onNativeFullscreenChange() {
+    const fullscreenButton = document.getElementById('fullscreen-video-button');
+    if (fullscreenButton) {
+        fullscreenButton.textContent = isNativeFullscreenActive() ? 'Exit Full Screen' : 'Full Screen';
     }
 }
 
@@ -301,8 +376,10 @@ function getCurrentQA() {
     const currentIndex = parseInt(document.getElementById('page-dropdown').value, 10);
     const current = questions[currentIndex];
     if (!current) return '';
-    const q = current.querySelector('.question')?.innerText || '';
-    const a = current.querySelector('.answer')?.innerText || '';
+    const questionElement = current.querySelector('.question');
+    const answerElement = current.querySelector('.answer');
+    const q = questionElement ? questionElement.innerText : '';
+    const a = answerElement ? answerElement.innerText : '';
     return `${q} ${a}`;
 }
 
@@ -334,8 +411,10 @@ function initializePaging() {
             btn.title = 'Speak this Q&A';
             btn.textContent = '🔊';
             btn.addEventListener('click', () => {
-                const qText = q.querySelector('.question')?.innerText || '';
-                const aText = q.querySelector('.answer')?.innerText || '';
+                const questionElement = q.querySelector('.question');
+                const answerElement = q.querySelector('.answer');
+                const qText = questionElement ? questionElement.innerText : '';
+                const aText = answerElement ? answerElement.innerText : '';
                 speakText(`${qText} ${aText}`);
             });
             q.appendChild(btn);
@@ -429,6 +508,10 @@ document.getElementById('back-button').addEventListener('click', () => {
 });
 
 document.getElementById('fullscreen-video-button').addEventListener('click', openVideoFullscreen);
+document.addEventListener('fullscreenchange', onNativeFullscreenChange);
+document.addEventListener('webkitfullscreenchange', onNativeFullscreenChange);
+document.addEventListener('mozfullscreenchange', onNativeFullscreenChange);
+document.addEventListener('MSFullscreenChange', onNativeFullscreenChange);
 
 document.getElementById('scroll-up').addEventListener('click', () => {
     const content = document.querySelector('.qa-wrapper');
