@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/01-the-constitution-and-the-preamble/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/01-the-constitution-and-the-preamble/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/02-directive-principles-of-state-policy/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/02-directive-principles-of-state-policy/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/03-rise-and-spread-of-christianity/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/03-rise-and-spread-of-christianity/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/04-birth-of-prophet-muhammad-and-spread-of-islam/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/04-birth-of-prophet-muhammad-and-spread-of-islam/quiz.json"
       }
     },
     {
@@ -69,6 +85,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/05-the-turkish-invasion-and-the-establishment-of-delhi-sultanat/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/05-the-turkish-invasion-and-the-establishment-of-delhi-sultanat/quiz.json"
       }
     },
     {
@@ -83,6 +103,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/06-the-khilji-and-the-tughlaq-dynasties/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/06-the-khilji-and-the-tughlaq-dynasties/quiz.json"
       }
     },
     {
@@ -97,6 +121,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/history/07-life-under-the-delhi-sultanate/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/history/07-life-under-the-delhi-sultanate/quiz.json"
       }
     }
   ]

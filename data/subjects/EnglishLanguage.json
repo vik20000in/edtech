@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/01-narrative-essay/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/01-narrative-essay/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/02-picture-composition/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/02-picture-composition/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/03-formal-letter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/03-formal-letter/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/04-notice-writing/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/04-notice-writing/quiz.json"
       }
     },
     {
@@ -69,6 +85,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/05-unseen-comprehension/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/05-unseen-comprehension/quiz.json"
       }
     },
     {
@@ -83,6 +103,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/06-adverbs-and-its-kinds/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/06-adverbs-and-its-kinds/quiz.json"
       }
     },
     {
@@ -97,6 +121,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/07-agreement-of-the-verb-with-the-subject/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/07-agreement-of-the-verb-with-the-subject/quiz.json"
       }
     },
     {
@@ -111,6 +139,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/08-tenses-simple-continuous-perfect-and-perfect-continuous/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/08-tenses-simple-continuous-perfect-and-perfect-continuous/quiz.json"
       }
     },
     {
@@ -125,6 +157,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-language/09-articles/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-language/09-articles/quiz.json"
       }
     }
   ]

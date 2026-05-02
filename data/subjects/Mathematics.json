@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/01-chapter-1/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/01-chapter-1/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/02-chapter-2/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/02-chapter-2/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/03-chapter-5/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/03-chapter-5/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/04-chapter-7/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/04-chapter-7/quiz.json"
       }
     },
     {
@@ -69,6 +85,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/05-chapter-8/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/05-chapter-8/quiz.json"
       }
     },
     {
@@ -83,6 +103,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/06-chapter-9/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/06-chapter-9/quiz.json"
       }
     },
     {
@@ -97,6 +121,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/07-chapter-13/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/07-chapter-13/quiz.json"
       }
     },
     {
@@ -111,6 +139,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/08-chapter-14/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/08-chapter-14/quiz.json"
       }
     },
     {
@@ -125,6 +157,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/09-chapter-16/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/09-chapter-16/quiz.json"
       }
     },
     {
@@ -139,6 +175,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/10-chapter-17/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/10-chapter-17/quiz.json"
       }
     },
     {
@@ -153,6 +193,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/11-chapter-20/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/11-chapter-20/quiz.json"
       }
     },
     {
@@ -167,6 +211,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/12-chapter-23/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/12-chapter-23/quiz.json"
       }
     },
     {
@@ -181,6 +229,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/mathematics/13-chapter-25/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/mathematics/13-chapter-25/quiz.json"
       }
     }
   ]

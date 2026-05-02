@@ -3,9 +3,15 @@ let subjectsData = {}; // Cache for loaded subject files
 let history = [{ type: 'main_menu' }];
 let autoSpeakEnabled = false;
 let appVideoFullscreenEnabled = false;
+const APP_VERSION = '20260502-quiz20-1';
+
+function withCacheBuster(path) {
+    if (!path) return path;
+    return path + (path.indexOf('?') === -1 ? '?' : '&') + 'v=' + APP_VERSION;
+}
 
 function loadData() {
-    fetch('data.json')
+    fetch(withCacheBuster('data.json'), { cache: 'no-store' })
         .then(response => response.json())
         .then(json => {
             data = json;
@@ -25,7 +31,7 @@ function loadSubjectData(subjectName, callback) {
         callback(subjectsData[subjectName]);
         return;
     }
-    fetch(subjectMeta.file)
+    fetch(withCacheBuster(subjectMeta.file), { cache: 'no-store' })
         .then(response => response.json())
         .then(subjectJson => {
             subjectsData[subjectName] = subjectJson;
@@ -76,6 +82,8 @@ function render() {
             toggleScrollButtons(false); // Hide scroll buttons
         } else if (currentState.type === 'html') {
             loadQA(currentState.subject, currentState.chapter);
+        } else if (currentState.type === 'quiz') {
+            loadQuiz(currentState.subject, currentState.chapter);
         }
     }
 }
@@ -145,6 +153,13 @@ function renderChapterMenu(subjectName, chapterName) {
             qaButton.onclick = () => selectQA(subjectName, chapterName);
             menu.appendChild(qaButton);
         }
+        if (chapter.quiz) {
+            const quizButton = document.createElement('button');
+            quizButton.className = 'menu-item quiz-menu-item';
+            quizButton.textContent = 'Quiz Test';
+            quizButton.onclick = () => selectQuiz(subjectName, chapterName);
+            menu.appendChild(quizButton);
+        }
         const firstItem = menu.querySelector('.menu-item');
         if (firstItem) firstItem.focus();
     });
@@ -169,6 +184,11 @@ function selectQA(subjectName, chapterName) {
         }
         render();
     });
+}
+
+function selectQuiz(subjectName, chapterName) {
+    history.push({ type: 'quiz', subject: subjectName, chapter: chapterName });
+    render();
 }
 
 function renderVideo(subjectName, chapterName, lessonTitle) {
@@ -336,7 +356,7 @@ async function loadQA(subjectName, chapterName) {
         `;
 
         try {
-            const response = await fetch(chapter.qa.path);
+            const response = await fetch(withCacheBuster(chapter.qa.path), { cache: 'no-store' });
             if (!response.ok) throw new Error('Failed to load Q&A');
             const html = await response.text();
             const qaContainer = document.querySelector('#qa-section');
@@ -352,6 +372,142 @@ async function loadQA(subjectName, chapterName) {
             `;
         }
     });
+}
+
+async function loadQuiz(subjectName, chapterName) {
+    loadSubjectData(subjectName, async subjectData => {
+        const content = document.getElementById('content');
+        const chapter = subjectData.chapters.find(c => c.name === chapterName);
+
+        content.innerHTML = `
+            <div class="quiz-wrapper">
+                <div class="quiz-header">
+                    <h2>${chapterName} - Quiz Test</h2>
+                    <p>20 multiple choice questions. Select one answer for each question.</p>
+                </div>
+                <div id="quiz-section" class="quiz-content">Loading quiz...</div>
+            </div>
+        `;
+
+        try {
+            const response = await fetch(withCacheBuster(chapter.quiz.path), { cache: 'no-store' });
+            if (!response.ok) throw new Error('Failed to load quiz');
+            const quizData = await response.json();
+            initializeQuiz(quizData);
+        } catch (error) {
+            console.error('Error loading quiz:', error);
+            content.innerHTML = `
+                <div class="qa-error">
+                    <h2>Error Loading Quiz</h2>
+                    <p>Failed to load quiz content for ${chapterName}</p>
+                </div>
+            `;
+        }
+    });
+}
+
+function escapeHTML(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function initializeQuiz(quizData) {
+    const quizSection = document.getElementById('quiz-section');
+    const questions = quizData.questions || [];
+    let currentQuestionIndex = 0;
+    const selectedAnswers = new Array(questions.length).fill(null);
+    let submitted = false;
+
+    function getScore() {
+        return questions.reduce((score, question, index) => {
+            return score + (selectedAnswers[index] === question.answer ? 1 : 0);
+        }, 0);
+    }
+
+    function renderQuizQuestion() {
+        const question = questions[currentQuestionIndex];
+        const selectedAnswer = selectedAnswers[currentQuestionIndex];
+        const optionsHtml = question.options.map((option, index) => {
+            let optionClass = 'quiz-option';
+            if (submitted && index === question.answer) optionClass += ' correct';
+            if (submitted && selectedAnswer === index && selectedAnswer !== question.answer) optionClass += ' incorrect';
+            if (!submitted && selectedAnswer === index) optionClass += ' selected';
+            return `
+                <button class="${optionClass}" data-option-index="${index}" ${submitted ? 'disabled' : ''}>
+                    <span class="quiz-option-label">${String.fromCharCode(65 + index)}.</span>
+                    ${escapeHTML(option)}
+                </button>
+            `;
+        }).join('');
+        const answeredCount = selectedAnswers.filter(answer => answer !== null).length;
+        const resultHtml = submitted ? `
+            <div class="quiz-result">
+                Score: ${getScore()} / ${questions.length}
+            </div>
+            <div class="quiz-explanation">
+                <strong>Explanation:</strong> ${escapeHTML(question.explanation || '')}
+            </div>
+        ` : '';
+
+        quizSection.innerHTML = `
+            <div class="quiz-progress">Question ${currentQuestionIndex + 1} of ${questions.length} | Answered: ${answeredCount}/${questions.length}</div>
+            <div class="quiz-question-card">
+                <div class="quiz-question-text">${escapeHTML(question.question)}</div>
+                <div class="quiz-options">${optionsHtml}</div>
+                ${resultHtml}
+            </div>
+            <div class="quiz-navigation">
+                <button id="prev-quiz-question" ${currentQuestionIndex === 0 ? 'disabled' : ''}>Previous</button>
+                <button id="next-quiz-question" ${currentQuestionIndex === questions.length - 1 ? 'disabled' : ''}>Next</button>
+                <button id="submit-quiz" ${submitted ? 'disabled' : ''}>Submit Test</button>
+                <button id="restart-quiz">Restart</button>
+            </div>
+        `;
+
+        document.querySelectorAll('.quiz-option').forEach(button => {
+            button.addEventListener('click', () => {
+                selectedAnswers[currentQuestionIndex] = parseInt(button.getAttribute('data-option-index'), 10);
+                renderQuizQuestion();
+            });
+        });
+
+        document.getElementById('prev-quiz-question').addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                renderQuizQuestion();
+            }
+        });
+
+        document.getElementById('next-quiz-question').addEventListener('click', () => {
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                renderQuizQuestion();
+            }
+        });
+
+        document.getElementById('submit-quiz').addEventListener('click', () => {
+            submitted = true;
+            renderQuizQuestion();
+        });
+
+        document.getElementById('restart-quiz').addEventListener('click', () => {
+            selectedAnswers.fill(null);
+            currentQuestionIndex = 0;
+            submitted = false;
+            renderQuizQuestion();
+        });
+    }
+
+    if (!questions.length) {
+        quizSection.innerHTML = '<div class="qa-error"><h2>No Quiz Questions Found</h2></div>';
+        return;
+    }
+
+    renderQuizQuestion();
 }
 
 function speakText(text) {

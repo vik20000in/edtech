@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/physics/01-chapter-1/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/physics/01-chapter-1/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/physics/02-chapter-2/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/physics/02-chapter-2/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/physics/03-chapter-3/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/physics/03-chapter-3/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/physics/04-chapter-4/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/physics/04-chapter-4/quiz.json"
       }
     }
   ]

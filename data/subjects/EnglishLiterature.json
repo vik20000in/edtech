@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-literature/01-prose-monday-morning/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-literature/01-prose-monday-morning/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-literature/02-prose-a-retrieved-reformation/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-literature/02-prose-a-retrieved-reformation/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-literature/03-poem-the-brook/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-literature/03-poem-the-brook/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-literature/04-poem-the-frog-and-the-nightingale/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-literature/04-poem-the-frog-and-the-nightingale/quiz.json"
       }
     },
     {
@@ -69,6 +85,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/english-literature/05-classic-short-story-the-boscombe-valley-mystery/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/english-literature/05-classic-short-story-the-boscombe-valley-mystery/quiz.json"
       }
     }
   ]

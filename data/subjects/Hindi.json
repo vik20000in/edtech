@@ -13,6 +13,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/01-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/01-chapter/quiz.json"
       }
     },
     {
@@ -27,6 +31,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/02-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/02-chapter/quiz.json"
       }
     },
     {
@@ -41,6 +49,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/03-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/03-chapter/quiz.json"
       }
     },
     {
@@ -55,6 +67,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/04-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/04-chapter/quiz.json"
       }
     },
     {
@@ -69,6 +85,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/05-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/05-chapter/quiz.json"
       }
     },
     {
@@ -83,6 +103,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/06-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/06-chapter/quiz.json"
       }
     },
     {
@@ -97,6 +121,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/07-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/07-chapter/quiz.json"
       }
     },
     {
@@ -111,6 +139,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/08-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/08-chapter/quiz.json"
       }
     },
     {
@@ -125,6 +157,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/09-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/09-chapter/quiz.json"
       }
     },
     {
@@ -139,6 +175,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/10-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/10-chapter/quiz.json"
       }
     },
     {
@@ -153,6 +193,10 @@
       "qa": {
         "type": "html",
         "path": "data/GeneratedQA/hindi/11-chapter/qa.html"
+      },
+      "quiz": {
+        "type": "json",
+        "path": "data/GeneratedQuiz/hindi/11-chapter/quiz.json"
       }
     }
   ]
