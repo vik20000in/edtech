@@ -48,9 +48,11 @@ function toggleScrollButtons(visible) {
 function render() {
     const content = document.getElementById('content');
     const backButton = document.getElementById('back-button');
+    const fullscreenButton = document.getElementById('fullscreen-video-button');
     const currentState = history[history.length - 1];
 
     content.innerHTML = ''; // Clear previous content
+    fullscreenButton.classList.toggle('visible', currentState.type === 'video');
 
     if (currentState.type === 'main_menu') {
         backButton.style.display = 'none';
@@ -174,11 +176,59 @@ function renderVideo(subjectName, chapterName, lessonTitle) {
         const lesson = chapter.lessons.find(l => l.title === lessonTitle);
 
         if (lesson.type === 'youtube') {
-            content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><iframe src="${formatYouTubeUrl(lesson.url)}" frameborder="0" allowfullscreen></iframe></div>`;
+            content.innerHTML = `
+                <section class="video-page">
+                    <h2>${lessonTitle}</h2>
+                    <p class="video-help">Use the top-right Full Screen button, or scroll down to use YouTube's own full screen option.</p>
+                    <div class="video-container" id="active-video-container">
+                        <iframe
+                            id="active-video-frame"
+                            src="${formatYouTubeUrl(lesson.url)}"
+                            title="${lessonTitle}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                            allowfullscreen
+                            webkitallowfullscreen
+                            mozallowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+            `;
         } else if (lesson.type === 'local') {
-            content.innerHTML = `<h2>${lessonTitle}</h2><div class="video-container"><video controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video></div>`;
+            content.innerHTML = `
+                <section class="video-page">
+                    <h2>${lessonTitle}</h2>
+                    <div class="video-container" id="active-video-container">
+                        <video id="active-video-frame" controls><source src="${lesson.path}" type="video/mp4">Your browser does not support the video tag.</video>
+                    </div>
+                </section>
+            `;
         }
     });
+}
+
+function openVideoFullscreen() {
+    const videoFrame = document.getElementById('active-video-frame');
+    const videoContainer = document.getElementById('active-video-container');
+    const target = videoFrame || videoContainer;
+
+    if (!target) return;
+
+    const requestFullscreen = target.requestFullscreen ||
+        target.webkitRequestFullscreen ||
+        target.mozRequestFullScreen ||
+        target.msRequestFullscreen;
+
+    if (requestFullscreen) {
+        const fullscreenResult = requestFullscreen.call(target);
+        if (fullscreenResult && typeof fullscreenResult.catch === 'function') {
+            fullscreenResult.catch(() => {
+                videoContainer?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        }
+    } else {
+        videoContainer?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 }
 
 function renderPDF(subjectName, chapterName) {
@@ -338,20 +388,28 @@ function initializePaging() {
 }
 
 function formatYouTubeUrl(url) {
+    let formattedUrl = url;
+
     // Handle youtu.be format
     if (url.includes('youtu.be')) {
         const videoId = url.split('youtu.be/')[1].split('?')[0];
-        return `https://www.youtube.com/embed/${videoId}`;
+        formattedUrl = `https://www.youtube.com/embed/${videoId}`;
     }
     // Handle youtube.com format
     else if (url.includes('youtube.com')) {
         if (url.includes('embed')) {
-            return url; // Already in embed format
+            formattedUrl = url; // Already in embed format
+        } else {
+            const videoId = url.split('v=')[1].split('&')[0];
+            formattedUrl = `https://www.youtube.com/embed/${videoId}`;
         }
-        const videoId = url.split('v=')[1].split('&')[0];
-        return `https://www.youtube.com/embed/${videoId}`;
     }
-    return url;
+
+    if (formattedUrl.includes('youtube.com/embed') && !formattedUrl.includes('fs=')) {
+        formattedUrl += formattedUrl.includes('?') ? '&fs=1&rel=0' : '?fs=1&rel=0';
+    }
+
+    return formattedUrl;
 }
 
 // Use this function when loading video URLs
@@ -369,6 +427,8 @@ document.getElementById('back-button').addEventListener('click', () => {
         render();
     }
 });
+
+document.getElementById('fullscreen-video-button').addEventListener('click', openVideoFullscreen);
 
 document.getElementById('scroll-up').addEventListener('click', () => {
     const content = document.querySelector('.qa-wrapper');
