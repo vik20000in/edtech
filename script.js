@@ -3,7 +3,7 @@ let subjectsData = {}; // Cache for loaded subject files
 let history = [{ type: 'main_menu' }];
 let autoSpeakEnabled = false;
 let appVideoFullscreenEnabled = false;
-const APP_VERSION = '20260502-quiz20-1';
+const APP_VERSION = '20260502-videosmulti-1';
 
 function withCacheBuster(path) {
     if (!path) return path;
